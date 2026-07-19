@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visitor Tips by Location</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/Assignment/CSS/VisitorTips.css" />
+  <link rel="stylesheet" href="/Assignment/CSS/BookmarkedPage.css" />
+  <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css">
+</head>
+
+<body class="pt-5">
+  <!-- Header -->
+  <header class="header shadow-sm fixed-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+        <!-- Toggle button beside logo -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation & Search -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/Home.html">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/discover-food.html">
+                <i class="fas fa-utensils"></i> Discover by Cuisine
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/discover-location.html">
+                <i class="fas fa-map-marker-alt"></i> Discover by Location
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/FoodStreetDetails.html">
+                <i class="fas fa-street-view"></i> Food Streets Details
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/PopularDishes.html">
+                <i class="fas fa-fire"></i> Popular Dishes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                <i class="fas fa-calendar-alt"></i> Events & Festivals
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/VisitorTips.html"
+                style="background-color:#060606; padding: 8px 10px; color:white;">
+                <i class="fas fa-lightbulb"></i> Visitor Tips
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html">
+                <i class="fas fa-bookmark"></i> Bookmarked Page
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="hero-containerV">
+    <h1>Essential tips for street food lovers. </h1>
+    <p> Stay safe, eat smart, and make the most of your street food adventures with our handy travel and dining
+      insights.</p>
+  </div>
+
+
+
+  <!-- Search Bar -->
+  <div class="container search-container">
+    <input id="searchInput" class="form-control w-75 mx-auto" type="text"
+      placeholder="Search for a state (e.g. Penang)" />
+    <!-- Search Suggestions Dropdown -->
+    <ul id="suggestionsList" class="list-group position-absolute"></ul>
+  </div>
+
+  <!-- Scrollable Flags -->
+  <div class="flag-scroll bg-light border-top border-bottom px-3">
+    <div class="flag-item" data-location="Johor">
+      <img src="/Assignment/Yap Ern Ru/flags/Johor.png" alt="Johor" />
+      <div>Johor</div>
+    </div>
+    <div class="flag-item" data-location="Kedah">
+      <img src="/Assignment/Yap Ern Ru/flags/Kedah.png" alt="Kedah" />
+      <div>Kedah</div>
+    </div>
+    <div class="flag-item" data-location="Kelantan">
+      <img src="/Assignment/Yap Ern Ru/flags/Kelantan.png" alt="Kelantan" />
+      <div>Kelantan</div>
+    </div>
+    <div class="flag-item" data-location="Melaka">
+      <img src="/Assignment/Yap Ern Ru/flags/Malacca.png" alt="Melaka" />
+      <div>Melaka</div>
+    </div>
+    <div class="flag-item" data-location="Negeri Sembilan">
+      <img src="/Assignment/Yap Ern Ru/flags/N9.png" alt="Negeri Sembilan" />
+      <div>Negeri Sembilan</div>
+    </div>
+    <div class="flag-item" data-location="Pahang">
+      <img src="/Assignment/Yap Ern Ru/flags/Pahang.png" alt="Pahang" />
+      <div>Pahang</div>
+    </div>
+    <div class="flag-item" data-location="Penang">
+      <img src="/Assignment/Yap Ern Ru/flags/Penang.png" alt="Penang" />
+      <div>Penang</div>
+    </div>
+    <div class="flag-item" data-location="Perak">
+      <img src="/Assignment/Yap Ern Ru/flags/Perak.png" alt="Perak" />
+      <div>Perak</div>
+    </div>
+    <div class="flag-item" data-location="Perlis">
+      <img src="/Assignment/Yap Ern Ru/flags/Perlis.png" alt="Perlis" />
+      <div>Perlis</div>
+    </div>
+    <div class="flag-item" data-location="Sabah">
+      <img src="/Assignment/Yap Ern Ru/flags/Sabah.png" alt="Sabah" />
+      <div>Sabah</div>
+    </div>
+    <div class="flag-item" data-location="Sarawak">
+      <img src="/Assignment/Yap Ern Ru/flags/Sarawak.png" alt="Sarawak" />
+      <div>Sarawak</div>
+    </div>
+    <div class="flag-item" data-location="Selangor">
+      <img src="/Assignment/Yap Ern Ru/flags/Selangor.png" alt="Selangor" />
+      <div>Selangor</div>
+    </div>
+    <div class="flag-item" data-location="Terengganu">
+      <img src="/Assignment/Yap Ern Ru/flags/Terengganu.png" alt="Terengganu" />
+      <div>Terengganu</div>
+    </div>
+    <!-- Federal Territories -->
+    <div class="flag-item" data-location="Kuala Lumpur">
+      <img src="/Assignment/Yap Ern Ru/flags/KL.png" alt="Kuala Lumpur" />
+      <div>Kuala Lumpur</div>
+    </div>
+  </div>
+
+
+  <!-- Initial View -->
+  <div id="initialView">
+    <!-- State Guide Accordion -->
+    <section id="state-guide" class="section container">
+      <h2 class="mb-4 text-center">📍 State-by-State Guide</h2>
+      <div class="accordion" id="stateAccordion"></div>
+    </section>
+
+    <!-- Overall Must‑Try Street Foods -->
+    <section id="must-try" class="section container">
+      <div class="container">
+        <h2 class="text-center mb-4">🍽️ Must‑Try Street Foods</h2>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
+          <div class="col">
+            <div class="card h-100 food-card">
+              <img src="/Assignment/Food/Char Kuey Teow.jpg" class="card-img-top" alt="Char Kuey Teow">
+              <div class="card-body">
+                <h5>Char Kuey Teow</h5>
+                <p>Penang’s smoky rice noodles with prawns, eggs & Chinese sausage.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm food-card">
+              <img src="/Assignment/Food/Satay.png" class="card-img-top" alt="Satay">
+              <div class="card-body">
+                <h5>Satay</h5>
+                <p>Grilled meat skewers served with peanut sauce, popular across Malaysia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm food-card">
+              <img src="/Assignment/Food/Laksa.jpg" class="card-img-top" alt="Laksa">
+              <div class="card-body">
+                <h5>Laksa</h5>
+                <p>Spicy noodle soup, with Penang Asam Laksa and Sarawak variations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Useful Apps -->
+    <section id="apps" class="section container">
+      <div class="container">
+        <h2 class="text-center mb-4">📱 Useful Apps</h2>
+        <div class="row row-cols-3 row-cols-md-3 row-cols-lg-3 g-3 text-center">
+          <div class="col">
+            <img src="/Assignment/Images/grab.png" alt="Grab" class="app-icon">
+            <h5 class="mt-2">Grab</h5>
+            <p>For transport and food delivery.</p>
+          </div>
+          <div class="col">
+            <img src="/Assignment/Images/touchngo.png" alt="Touch 'n Go" class="app-icon">
+            <h5 class="mt-2">Touch 'n Go</h5>
+            <p>Popular cashless payment across Malaysia.</p>
+          </div>
+          <div class="col">
+            <img src="/Assignment/Images/googlemaps.webp" alt="Google Maps" class="app-icon">
+            <h5 class="mt-2">Google Maps</h5>
+            <p>Stall ratings & directions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="local" class="section container">
+      <h2 class="text-center mb-4">🗣️ Local Phrases</h2>
+      <div class="row">
+
+        <!-- Eat-in or Takeaway -->
+        <div class="col">
+          <div class="card card-category eat h-100 shadow-sm hover-card">
+            <div class="card-body d-flex flex-column">
+              <h5>🍴 Eat-in or Takeaway</h5>
+              <div class="table-responsive mb-2">
+                <table class="table table-bordered table-sm text-center mb-2">
+                  <thead>
+                    <tr>
+                      <th>BM</th>
+                      <th>ENG</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Bungkus</strong></td>
+                      <td>Takeaway / To-go</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Makan sini</strong></td>
+                      <td>Eat here / Dine-in</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Bawa balik</strong></td>
+                      <td>Bring home / Takeaway</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Makan luar</strong></td>
+                      <td>Eating outside (dining out)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Tapau</strong> <span class="badge bg-info text-dark">Casual</span></td>
+                      <td>Takeaway (slang, very common)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="small text-muted mt-auto">
+                💡 Tip: “Bungkus” and “Tapau” are the most common words locals use when ordering food to-go.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spice Level -->
+        <div class="col">
+          <div class="card card-category spice h-100 shadow-sm hover-card">
+            <div class="card-body d-flex flex-column">
+              <h5>🌶️ Spice Level</h5>
+              <div class="table-responsive mb-2">
+                <table class="table table-bordered table-sm text-center mb-2">
+                  <thead>
+                    <tr>
+                      <th>BM</th>
+                      <th>ENG</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>tak mau <strong>pedas</strong></td>
+                      <td>not spicy</td>
+                    </tr>
+                    <tr>
+                      <td>kurang <strong>pedas</strong></td>
+                      <td>less spicy</td>
+                    </tr>
+                    <tr>
+                      <td><strong>pedas</strong></td>
+                      <td>spicy</td>
+                    </tr>
+                    <tr>
+                      <td>tambah <strong>pedas</strong></td>
+                      <td>extra spicy / add spice</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="mb-2"><strong>Note:</strong> For ice level, replace "<strong>pedas</strong>" with
+                "<strong>ais</strong>" (ice).</p>
+              <div class="d-flex flex-wrap gap-2 mt-auto">
+                <span class="badge bg-warning text-dark">manis (sweet)</span>
+                <span class="badge bg-warning text-dark">sos (sauce)</span>
+                <span class="badge bg-warning text-dark">nasi (rice)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantity -->
+        <div class="col">
+          <div class="card card-category quantity h-100 shadow-sm hover-card">
+            <div class="card-body d-flex flex-column">
+              <h5>🔢 Quantity</h5>
+              <div class="table-responsive mb-2">
+                <table class="table table-bordered table-sm text-center mb-0">
+                  <thead>
+                    <tr>
+                      <th>BM</th>
+                      <th>ENG</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1️⃣ Satu</td>
+                      <td>One</td>
+                    </tr>
+                    <tr>
+                      <td>2️⃣ Dua</td>
+                      <td>Two</td>
+                    </tr>
+                    <tr>
+                      <td>3️⃣ Tiga</td>
+                      <td>Three</td>
+                    </tr>
+                    <tr>
+                      <td>4️⃣ Empat</td>
+                      <td>Four</td>
+                    </tr>
+                    <tr>
+                      <td>5️⃣ Lima</td>
+                      <td>Five</td>
+                    </tr>
+                    <tr>
+                      <td>6️⃣ Enam</td>
+                      <td>Six</td>
+                    </tr>
+                    <tr>
+                      <td>7️⃣ Tujuh</td>
+                      <td>Seven</td>
+                    </tr>
+                    <tr>
+                      <td>8️⃣ Lapan</td>
+                      <td>Eight</td>
+                    </tr>
+                    <tr>
+                      <td>9️⃣ Sembilan</td>
+                      <td>Nine</td>
+                    </tr>
+                    <tr>
+                      <td>🔟 Sepuluh</td>
+                      <td>Ten</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section container">
+      <h2 class="text-center mb-4">❓ Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+              Is Malaysian street food safe to eat?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, generally Malaysian street food is safe, especially from busy stalls with high turnover. Just look
+              for clean preparation areas and fresh ingredients.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              What are some unique Malaysian street foods?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Unique Malaysian street foods include delicacies such as apam balik, otak-otak, and ais kacang, each
+              offering a distinct taste and a hit of local culinary innovation.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              What is the most famous street food in Malaysia?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Char Kuey Teow, Nasi Lemak, Satay, and Roti Canai are among the most iconic and beloved street foods
+              across Malaysia.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Is street food available late at night?
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes! Many street food stalls, especially in night markets (pasar malam), operate until late, making them
+              perfect for supper cravings.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Are there vegetarian options in Malaysian street food?
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              While many dishes include meat, there are vegetarian-friendly options like vegetarian Popiah, Roti Canai
+              (without curry), and certain noodle dishes. Look for Indian or Chinese vegetarian stalls.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              How much does Malaysian street food usually cost?
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Most street food items range from RM3 to RM10, making it an affordable way to explore Malaysian cuisine.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              Can I find street food in smaller towns?
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely! Small towns often have their own local specialties. For example, Pahang has Ikan Patin
+              Tempoyak, and Ipoh is famous for its white coffee and bean sprout chicken.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    </div>
+
+
+    <!-- State-Specific View -->
+  <section id="state-content" class="container my-5" style="display:none;">
+    <div id="selectedStateHeader" class="state-header">
+      <h2><i class="bi bi-geo-alt me-2"></i>Select a state to explore its food & tips</h2>
+      <p class="mb-0">Click a flag above to explore</p>
+    </div>
+    <div id="stateSpecificContent"></div>
+  </section>
+
+  <!-- Tips Section -->
+  <section class="container my-5">
+    <div id="tipsContainer" class="row g-4"></div>
+  </section>
+
+  <!-- Template for tips -->
+  <template id="tipTemplate">
+    <div class="col-md-6">
+      <div class="card card-tip shadow-sm p-3 h-100">
+        <div class="d-flex align-items-start gap-3">
+          <div class="icon-circle bg-warning text-white rounded-circle d-flex align-items-center justify-content-center"
+            style="width:40px;height:40px;">
+            <i class="bi bi-info-circle"></i>
+          </div>
+          <div>
+            <h5 class="tip-title fw-bold mb-1"></h5>
+            <p class="tip-text mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+      <a href="/Assignment/HTML/BookmarkedPage.html" class="stick-bookmark-btn" title="Go to Bookmark Page">
+    📌 
+  </a>
+<!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom JS -->
+    <script src="/Assignment/JS/VisitorTips.js"></script>
+    <script src="/Assignment/JS/BookmarkedPage.js"></script>
+    <script src="/Assignment/JS/footer.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPage = location.pathname.split("/").pop();
+
+        // Highlight the correct nav link
+        if (currentPage === "VisitorTips.html") {
+          document.getElementById("nav-visitor").classList.add("active");
+        } else if (currentPage === "BookmarkedPage.html") {
+          document.getElementById("nav-bookmark").classList.add("active");
+        }
+      });
+    </script>
+</body>
+
+</html>

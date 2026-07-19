@@ -1,0 +1,354 @@
+body{
+    background-color: #0000001e;
+}
+.hero-container {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("/Assignment/Shak Yong Sim/Food Streets/StreetFood.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  padding: 100px 20px;
+}
+
+.hero-container h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 300;
+}
+
+.hero-container p {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 500;
+}
+
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    padding: 40px 0 10px 0;
+}
+
+#popular-food-streets > p{
+    text-align: center;
+    font-weight: bold;
+}
+
+#popular-food-streets > p > a{
+    text-decoration: none;
+}
+
+#popular-food-streets > p > a:hover{
+    color: goldenrod;
+    transition: color 0.3s ease-in-out;
+}
+
+.popular-food-streets-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 40px;
+    justify-content: center;
+    justify-self: center;
+    margin: 0 10vh;
+    max-width: 800px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .popular-food-streets-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 40px;
+        justify-content: center;
+        margin: 0 5vh;
+    }
+}
+
+.location-container{
+    background-color: #00000016;
+    padding: 30px;
+}
+
+.location-container img{
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.location-container.item-1{
+    grid-row: 1;
+}
+
+.location-container.item-2{
+    grid-row: 2;
+}
+
+.location-container.item-3{
+    grid-row: 3;
+}
+
+#trending-dishes > p{
+    text-align: center;
+    font-weight: bold;
+}
+
+#trending-dishes > p > a{
+    text-decoration: none;
+}
+
+#trending-dishes > p > a:hover{
+    color: goldenrod;
+    transition: color 0.3s ease-in-out;
+}
+
+.trending-dishes-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 10vh;
+}
+
+.dish-container{
+    background-color: #00000026;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.dish-container img{
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.dish-container h4{
+    padding: 12px 0;
+}
+
+.dish-container.item-1,
+.dish-container.item-2,
+.dish-container.item-3,
+.dish-container.item-4,
+.dish-container.item-5,
+.dish-container.item-6 {
+    grid-row: auto;
+    grid-column: auto;
+}
+
+@media (max-width: 768px){
+    .trending-dishes-container{
+        /* Changes to a single column grid for mobile devices */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        margin: 0 5vh; /* Adjust margin for smaller screens */
+    }
+
+    /* Resets grid placement for items to stack in a single column */
+    .dish-container.item-1,
+    .dish-container.item-2,
+    .dish-container.item-3,
+    .dish-container.item-4,
+    .dish-container.item-5,
+    .dish-container.item-6 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
+
+.upcoming-events-container{
+    display: grid;
+    background-color: #dab26026;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 10vh;
+}
+
+@media (max-width: 768px){
+    .upcoming-events-container{
+        display: grid;
+        background-color: #dab26026;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 20px;
+        margin: 0 5vh;
+    }
+}
+
+.event-container{
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.event-content{
+    grid-column: 1;
+    padding: 30px;
+}
+
+.event-container img{
+    grid-row: 1;
+    grid-column: 2;
+    width: 90%;
+    align-self: center;
+    margin: 20px 0;
+}
+
+.event-container a{
+    text-decoration: none;
+}
+
+.event-container a:hover{
+    color: goldenrod;
+    transition: color 0.3s ease-in-out;
+}
+
+.event-container.item-1{
+    grid-row: 1;
+}
+
+.event-container.item-2{
+    grid-row: 2;
+}
+
+.event-container.item-3{
+    grid-row: 3;
+}
+
+/* Newsletter container */
+.newsletter-container {
+  font-family: 'Bebas Neue', sans-serif;
+  border-top: 1px solid #ddd;
+  padding: 30px 20px 30px 30px; /* top right bottom left, bottom = 0 */
+  background-color: #e6e6e6;
+  color: #000000;
+  max-width: 100%;
+  box-sizing: border-box;
+   margin: 20px 0 0 0; /* add 20px space above, no space on other sides */
+}
+
+
+/* Inputs and buttons */
+.newsletter-container input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-container button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.newsletter-container input.invalid {
+  border-color: red;
+  border-width: 5px;
+}
+
+#subscribe-btn {
+  background-color: #e90000;
+  color: #fff;
+}
+
+#subscribe-btn:hover {
+  background-color: #ffffff;
+  color: #f90202;
+}
+
+.close-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.close-btn:hover {
+  background-color: #848282;
+  color: #f3f0f0;
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+}
+
+/* Banner */
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #080808;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 9999;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: medium;
+
+}
+
+.cookie-consent p {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.cookie-consent .buttons {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.cookie-consent button {
+  padding: 8px 12px;
+  border: none;
+  
+  cursor: pointer;
+}
+
+.cookie-consent button#accept-cookies {
+  background-color: #e90000;
+  color: #fff;
+}
+
+.cookie-consent button#accept-cookies:hover {
+  background-color: #fff;
+  color: #e90000;
+}
+
+.cookie-consent button#manage-cookies {
+  background-color: #555;
+  color: #fff;
+}
+
+.cookie-consent button#manage-cookies:hover {
+  background-color: #777;
+}
+
+/* Newsletter input */
+.newsletter-container input.invalid {
+  border-color: red;
+  border-width: 2px;
+}

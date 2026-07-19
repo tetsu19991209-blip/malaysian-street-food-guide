@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Bookmarks</title>
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Assignment/CSS/BookmarkedPage.css">
+    <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css">
+</head>
+
+<body class="pt-5">
+    <!-- Header -->
+    <header class="header shadow-sm fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+                <!-- Toggle button beside logo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation & Search -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Home.html">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-food.html">
+                                <i class="fas fa-utensils"></i> Discover by Cuisine
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-location.html">
+                                <i class="fas fa-map-marker-alt"></i> Discover by Location
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/FoodStreetGuide.html">
+                                <i class="fas fa-street-view"></i> Food Streets Details
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/PopularDishes.html">
+                                <i class="fas fa-fire"></i> Popular Dishes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                                <i class="fas fa-calendar-alt"></i> Events & Festivals
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/VisitorTips.html">
+                                <i class="fas fa-lightbulb"></i> Visitor Tips
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html"
+                                style="background-color:#060606; padding: 8px 10px; color:white;">
+                                <i class="fas fa-bookmark"></i> Bookmarked Page
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-container">
+        <h1>Save your street food favorites</h1>
+        <p>Bookmark dishes, events, and locations to easily revisit and plan your next delicious adventure.</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container-my-5">
+        <h1 class="text-center mb-4">
+            <i class="bi bi-bookmark-heart-fill text-danger"></i> My Saved Bookmarks
+        </h1>
+
+        <!-- Empty state message -->
+        <div id="emptyBookmarkMsg" class="text-center my-4" style="display: none;">
+            <div class="msg p-4 rounded shadow-sm">
+                <p class="fs-5 text-muted mb-3">You haven't saved any bookmarks yet.</p>
+                <a href="/Assignment/HTML/VisitorTips.html" class="btn btn-primary">
+                    <i class="bi bi-lightbulb-fill me-1"></i> Check Visitor Tips
+                </a>
+            </div>
+        </div>
+
+        <!-- Bookmark list -->
+        <div id="bookmarkList" class="row g-4">
+            <!-- Bookmark cards will be injected here -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="/Assignment/JS/BookmarkedPage.js"></script>
+    <script src="/Assignment/JS/footer.js"></script>
+</body>
+
+</html>

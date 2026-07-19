@@ -1,0 +1,397 @@
+/* ===== Global Styles ===== */
+body {
+  scroll-behavior: smooth;
+  background-color: #fffbea;
+  font-family: 'Gothic A1', sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+/* ===== Hero Section ===== */
+.hero-containerV {
+  color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("/Assignment/Header Photo/malaysia visitor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  min-height: 300px;
+  padding: 80px 20px;
+}
+
+.hero-containerV h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-containerV p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* ===== Section ===== */
+.section {
+  padding: 40px 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+.section h2 {
+   font-family: 'Bebas Neue', sans-serif;
+}
+
+/* ===== Search Bar ===== */
+.search-container {
+  margin: 20px;
+  position: relative;
+}
+
+.search-container input {
+  font-family: 'Bebas Neue', sans-serif;
+  border-radius: 30px;
+  border: 3px solid #000;
+  padding: 10px 15px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #ffb300;
+  box-shadow: 0 0 8px rgba(255,193,7,0.4);
+}
+
+.flag-scroll{
+font-family: 'Bebas Neue', sans-serif;
+}
+
+#state-content h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+#suggestionsList {
+  max-height: 200px;
+  overflow-y: auto;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  display: none;
+  z-index: 10;
+}
+
+.stick-bookmark-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #26ff00; /* black background */
+    color: #fff;            /* white text/icon */
+    border: none;
+      /* pill-shaped */
+    padding: 12px 20px;
+    font-size: 16px;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.stick-bookmark-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Scrollable Flags ===== */
+.flag-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 5px;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  scroll-behavior: smooth;
+}
+
+.flag-item {
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.flag-item img {
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  border: 2px solid #fff;
+}
+
+.flag-item:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255,193,7,0.2);
+}
+
+.flag-item.active {
+  background-color: #ffc107;
+  box-shadow: 0 5px 15px rgba(255,193,7,0.4);
+  transform: scale(1.05);
+}
+
+/* ===== Food Cards ===== */
+.food-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12), 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.food-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.food-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Tips Cards ===== */
+.card-tip {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  background-color: #fff;
+}
+
+.icon-circle {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* ===== Local Phrases Section ===== */
+#local .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#local .card {
+  border-radius: 16px;
+  background-color: #fff;
+  border: 5px solid rgba(0,0,0,0.08);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.card-category.eat { background-color: #fbf1d0; }
+.card-category.spice { background-color: #fff0f0; }
+.card-category.quantity { background-color: #f0fff5; }
+
+#local .card-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+#local h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #d35400;
+}
+
+#local table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fdfaf6;
+  font-size: 0.95rem;
+}
+
+#local table th,
+#local table td {
+  padding: 8px 10px;
+  text-align: center;
+}
+
+#local table th {
+  font-weight: 600;
+  color: #333;
+  background-color: #fff3cd;
+}
+
+#local table td {
+  color: #555;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+#local table tbody tr:nth-child(odd) { background-color: #fff8f0; }
+#local table tbody tr:nth-child(even) { background-color: #fdfaf6; }
+#local table tbody tr:hover { background-color: #ffeacc; transition: 0.2s; }
+
+#local .card p.small {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+/* Default bookmark button */
+.bookmark-btn {
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Active bookmark style */
+.bookmark-btn.active-bookmark {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+.bookmark-btn.active-bookmark i {
+    color: #fff;
+}
+
+/* ===== FAQ ===== */
+#faq .accordion-button { font-weight: 500; }
+
+/* ===== Hero & Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .food-card img { height: 200px; }
+  .flag-item img { height: 40px; }
+  #local table th, #local table td { padding: 6px 8px; font-size: 0.85rem; }
+  #local .card, .card-tip { padding: 10px; }
+  .hero-containerV { padding: 60px 15px; }
+}
+
+@media (max-width: 576px) {
+  .hero-containerV h1 { font-size: 2rem; }
+  .hero-containerV p { font-size: 0.95rem; }
+  #local .row { grid-template-columns: 1fr; }
+}
+
+
+#apps .app-icon {
+    width: 80px;          /* default size for mobile */
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+#apps .col h5 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+#apps .col p {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Hover effect for icons (optional) */
+#apps .app-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) { /* small tablets */
+    #apps .app-icon {
+        width: 90px;
+        height: 90px;
+    }
+    #apps .col h5 {
+        font-size: 1.1rem;
+    }
+    #apps .col p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 992px) { /* desktop */
+    #apps .app-icon {
+        width: 100px;
+        height: 100px;
+    }
+    #apps .col h5 {
+        font-size: 1.2rem;
+    }
+    #apps .col p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Container styling */
+#selectedStateHeader {
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #f9f9f9; /* optional light background */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Main heading */
+#selectedStateHeader h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;       /* default mobile size */
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;             /* spacing between icon and text */
+}
+
+/* Subtext paragraph */
+#selectedStateHeader p {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;          /* default mobile size */
+    color: #555;
+    margin-top: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    #selectedStateHeader h2 {
+        font-size: 2rem;
+    }
+    #selectedStateHeader p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #selectedStateHeader h2 {
+        font-size: 2.4rem;
+    }
+    #selectedStateHeader p {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover by Food</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Assignment/CSS/discover-food.css">
+    <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css">
+
+</head>
+
+<body class="pt-5">
+    <!-- Header -->
+    <header class="header shadow-sm fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+                <!-- Toggle button beside logo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation & Search -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Home.html">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-food.html"
+                                style="background-color:#060606; padding: 8px 10px; color:white;">
+                                <i class="fas fa-utensils"></i> Discover by Cuisine
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-location.html">
+                                <i class="fas fa-map-marker-alt"></i> Discover by Location
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/FoodStreetGuide.html">
+                                <i class="fas fa-street-view"></i> Food Streets Details
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/PopularDishes.html">
+                                <i class="fas fa-fire"></i> Popular Dishes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                                <i class="fas fa-calendar-alt"></i> Events & Festivals
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/VisitorTips.html">
+                                <i class="fas fa-lightbulb"></i> Visitor Tips
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html">
+                                <i class="fas fa-bookmark"></i> Bookmarked Page
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-container">
+        <h1>Discover street food by cuisine. </h1>
+        <p>Savor authentic flavors, explore diverse culinary traditions, and find your next favorite dish from around
+            the world.</p>
+    </div>
+
+    <main>
+        <div class="container mt-4">
+            <!-- Food Categories -->
+            <h4 class="mb-3 fw-bold">Popular Malaysian Foods</h4>
+            <div class="food-carousel-wrapper">
+                <div class="food-carousel-track">
+
+                    <div class="category-btn" data-keyword="Laksa"
+                        data-desc="Laksa is a spicy noodle soup popular in Malaysia.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/laksa.jpeg" alt="Laksa">
+                        <span>Laksa</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Nasi Lemak"
+                        data-desc="Nasi Lemak is a fragrant rice dish cooked in coconut milk.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/nasilemak.jpg" alt="Nasi Lemak">
+                        <span>Nasi Lemak</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Satay"
+                        data-desc="Satay is skewered and grilled meat served with peanut sauce.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/satay.jpg" alt="Satay">
+                        <span>Satay</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Roti Canai"
+                        data-desc="Roti Canai is a flaky flatbread served with curry.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/roticanai.jpg" alt="Roti Canai">
+                        <span>Roti Canai</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Char Kway Teow"
+                        data-desc="Char Kway Teow is stir-fried flat rice noodles with shrimp.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/charkueyteow.jpg" alt="Char Kway Teow">
+                        <span>Char Kway Teow</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Teh Tarik"
+                        data-desc="Teh Tarik is a pulled milk tea, creamy and frothy.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/tehtarik.jpg" alt="Teh Tarik">
+                        <span>Teh Tarik</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Apam Balik"
+                        data-desc="Apam Balik is a sweet folded pancake filled with peanuts and sugar.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/apambalik.jpg" alt="Apam Balik">
+                        <span>Apam Balik</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Otak-Otak"
+                        data-desc="Otak-Otak is grilled fish paste wrapped in banana leaves.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/otakotak.jpg" alt="Otak-Otak">
+                        <span>Otak-Otak</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Ais Kacang"
+                        data-desc="Ais Kacang is shaved ice dessert with sweet syrups and jelly.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/icekacang.jpg" alt="Ais Kacang">
+                        <span>Ais Kacang</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Rojak"
+                        data-desc="Rojak is a traditional fruit & vegetable salad tossed in spicy peanut sauce.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/rojak.jpg" alt="Rojak">
+                        <span>Rojak</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Cendol"
+                        data-desc="Cendol is a dessert with shaved ice, coconut milk, and palm sugar syrup.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/cendol.jpg" alt="Cendol">
+                        <span>Cendol</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Mee Goreng Mamak"
+                        data-desc="Mee Goreng Mamak is spicy fried noodles served with vegetables.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/meegorengmamak.png" alt="Mee Goreng Mamak">
+                        <span>Mee Goreng Mamak</span>
+                    </div>
+
+                    <div class="category-btn" data-keyword="Laksa Sarawak"
+                        data-desc="Laksa Sarawak is coconut-based noodle soup with herbs and spices.">
+                        <img src="/Assignment/Jimmy Wong Jia Cheng/food/sarawaklaksa.jpg" alt="Laksa Sarawak">
+                        <span>Laksa Sarawak</span>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Buttons below -->
+
+            </div>
+
+
+
+
+            <!-- Knowledge Panel -->
+            <div id="foodInfo" class="knowledge-panel p-3 mb-4" style="display:none;">
+                <div
+                    class="d-flex flex-column flex-md-row align-items-center align-items-md-start text-center text-md-start">
+                    <!-- Image on the left (desktop) / top (mobile) -->
+                    <img id="foodInfoImg" src="" alt="" class="img-fluid rounded mb-3 mb-md-0 me-md-3"
+                        style="max-width: 150px; height: auto;" />
+
+                    <!-- Text on the right (desktop) / below (mobile) -->
+                    <div>
+                        <h4 id="foodInfoTitle" class="fw-bold mb-2"></h4>
+                        <p id="foodInfoDesc" class="mb-2"></p>
+                        <button id="discoverNearbyBtn" class="btn btn-primary mt-2">Discover Nearby</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant Results -->
+            <div id="foodGrid" class="food-grid"></div>
+        </div>
+
+        <!-- Hidden Map (for Places API) -->
+        <div id="hiddenMap" style="display:none;"></div>
+    </main>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Maps API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTG8PkTTetRX5tbmC13IWjXQRNYBEjFJQ&libraries=places&callback=initMap"></script>
+
+    <!-- External JS -->
+    <script src="/Assignment/JS/discover-food.js"></script>
+    <script src="/Assignment/JS/footer.js"></script>
+
+</body>
+<!-- Footer -->
+
+
+
+</html>

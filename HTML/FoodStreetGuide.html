@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Street Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css" />
+    <link rel="stylesheet" href="/Assignment/CSS/FoodStreetGuide.css" />
+</head>
+
+<body>
+
+    <body class="pt-5">
+        <!-- Header -->
+        <header class="header shadow-sm fixed-top bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+                    <!-- Toggle button beside logo -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navigation & Search -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/Home.html">
+                                    <i class="fas fa-home"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/discover-food.html">
+                                    <i class="fas fa-utensils"></i> Discover by Cuisine
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/discover-location.html">
+                                    <i class="fas fa-map-marker-alt"></i> Discover by Location
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/FoodStreetGuide.html"
+                                    style="background-color:#060606; padding: 8px 10px; color:white;">
+                                    <i class="fas fa-street-view"></i> Food Streets Details
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/PopularDishes.html">
+                                    <i class="fas fa-fire"></i> Popular Dishes
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                                    <i class="fas fa-calendar-alt"></i> Events & Festivals
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/VisitorTips.html">
+                                    <i class="fas fa-lightbulb"></i> Visitor Tips
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html">
+                                    <i class="fas fa-bookmark"></i> Bookmarked Page
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-container">
+            <h1>Your ultimate street food guide</h1>
+            <p>Discover the best local flavors, hidden gems, and must-try dishes for an unforgettable food journey.</p>
+        </div>
+
+
+        <main>
+            <!-- Page Section Navigation Dropdown -->
+            <div class="page-nav" id="pageNav">
+                <button id="navToggle">📑</button>
+                <div class="nav-content" id="navContent">
+                    <label for="section-select">Jump to:</label>
+                    <select id="section-select" onchange="location = this.value;">
+                        <option value="#top">🔝Go Top</option>
+                        <option value="#street-chosen">Street Chosen</option>
+                        <option value="#street-map">Street Map</option>
+                        <option value="#street-video">Street Food Review Video</option>
+                        <option value="#street-food">Must Try</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <section id="street-chosen" class="street-chosen">
+                <h2>Choose a Street</h2>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search Street..." autocomplete="off">
+                    <!-- Search history dropdown -->
+                    <div id="search-history-box" class="search-history-box"></div>
+                </div>
+
+                <div class="street-scroll">
+                    <div class="street-card" onclick="selectStreet('Jonker Street')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.1.jonkerstreet.jpg" alt="Jonker Street">
+                        <p>Jonker Street, Melaka</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Jalan Alor')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.2.jalanalor.jpg" alt="Jalan Alor">
+                        <p>Jalan Alor, Kuala Lumpur</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Gurney Drive')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.3.gurneydrive.jpg" alt="Gurney Drive">
+                        <p>Gurney Drive, Penang</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Chulia Street')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.4.chulia.jpg" alt="Chulia Street">
+                        <p>Chulia Street, Penang</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('SS2 Night Market')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.5.ss2.jpg" alt="SS2 Night Market">
+                        <p>SS2 Night Market, Selangor</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Jalan Yang Kalsom')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.6.jalanyangkalsom.jpg" alt="Jalan Yang Kalsom">
+                        <p>Jalan Yang Kalsom, Ipoh</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Jalan Wong Ah Fook')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.7.jalanwongahfook.jpg" alt="Jalan Wong Ah Fook">
+                        <p>Jalan Wong Ah Fook, Johor Bahru</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('New Lane Street Food')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.8.newlane.png" alt="New Lane Street Food">
+                        <p>New Lane Street Food Stalls, Penang</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Petaling Street')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.9.petalingstreet.jpg" alt="Petaling Street">
+                        <p>Petaling Street, Kuala Lumpur</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Gerbang Malam')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.10.gerbangmalan.jpeg" alt="Gerbang Malam">
+                        <p>Gerbang Malam, Ipoh</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Kampar Food Street')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.11.kamparfoodstreet.jpg" alt="Kampar Food Street">
+                        <p>Kampar Food Street, Perak</p>
+                    </div>
+                    <div class="street-card" onclick="selectStreet('Arau Street Hawker Stall')">
+                        <img src="/Assignment/Chong Zhi Cong/images/2.12.arau.jpg" alt="Arau Street Hawker Stalls">
+                        <p>Arau Street Hawker Stalls, Perlis</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wrapper for flex layout -->
+            <div id="street-info-map-wrapper">
+                <!-- Section 2: Street Info -->
+                <section id="street-info" class="street-info">
+                    <div class="info-container">
+                        <div class="info-left">
+                            <img id="street-img" src="/Assignment/Chong Zhi Cong/images/3.3.1.jonker.jpg"
+                                alt="Jonker Street" />
+                        </div>
+                        <div class="info-right">
+                            <h2 id="street-name">Jonker Street</h2>
+                            <p><strong>Belong state:</strong> <span id="street-state">Melaka</span></p>
+                            <p><strong>Tag:</strong> <span id="street-tag">
+                                    Jonker Street, Jonker Walk or Jalan Hang Jebat, is the centrepiece to Melaka's
+                                    Chinatown...
+                                </span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3: Interactive Map -->
+                <section id="street-map" class="street-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8879034375777!2d102.2445421718025!3d2.1961012582781696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1d9109d82bd%3A0xa64ad6057d71102!2z6bih5Zy66KGX!5e0!3m2!1sen!2smy!4v1756068788933!5m2!1sen!2smy"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+
+                    <div class="map-info" id="map-info">
+                        <h3>Jonker Street</h3>
+                        <p>Located in Melaka, near Chinatown and historical sites. <br>
+                            Open Friday to Sunday evenings 7pm - 1am.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Section 4: Street Food Review Video -->
+            <section id="street-video" class="street-video">
+                <h2>Street Food Review</h2>
+                <div class="video-container">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/wuoFSwEPiaI"
+                        title="Jonker Street Night Market, Melaka | Food Hunting & Walking Tour | Malaysia Street Food | 马六甲鸡场街美食"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Section 5: Must Try -->
+            <section id="street-food" class="street-food">
+                <h2>Must-Try Foods</h2>
+                <div class="food-grid">
+                    <!-- Food Card 1 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.1.shop1.jpg" alt="Restaurant 1">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.4.food1.jpg" alt="Food 1">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Melaka Style Laksa</h3>
+                            <p class="street"><strong>Street:</strong> Jalan Alor</p>
+                            <p>A rich and tangy coconut-based noodle soup with shredded chicken, prawns, and herbs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 2 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.2shop2.jpg" alt="Restaurant 2">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.5 food2.jpg" alt="Food 2">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Mango Smoothies</h3>
+                            <p class="street"><strong>Street:</strong> Jonker Street</p>
+                            <p>Refreshing mango smoothies made with imported mangoes. QR code payments available.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 3 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.3.shop3.jpg" alt="Restaurant 3">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.6. food3.jpg" alt="Food 3">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Steamed Eggs with Prawns & Shallots</h3>
+                            <p class="street"><strong>Street:</strong> Gurney Drive</p>
+                            <p>Silky smooth steamed egg custard with prawns and crispy shallots.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 4 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.7 Shop4.png" alt="Restaurant 4">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.8 Laksa Penang.png" alt="Food 4">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Laksa Penang</h3>
+                            <p class="street"><strong>Street:</strong> Chulia Street</p>
+                            <p>A flavorful Penang laksa with tangy and spicy fish-based broth, rice noodles, and fresh
+                                herbs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 5 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.9shop5.jpg" alt="Restaurant 5">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.10 food5.jpg" alt="Food 5">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Pan Mee</h3>
+                            <p class="street"><strong>Street:</strong> SS2</p>
+                            <p>Noodles are handmade daily — springy and chewy! Portion is generous.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 6 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.12 shop6.jpg" alt="Restaurant 6">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.11 food12.jpg" alt="Food 6">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Wat Dan Ho
+                            </h3>
+                            <p class="street"><strong>Street:</strong> Yang Kalsom</p>
+                            <p>Famous for Wat Dan Ho, a comforting Ipoh-style soy sauce gravy with silky egg custard and
+                                fresh toppings.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 7 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.13 shop7.jpg" alt="Restaurant 7">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.14 food7.jpg" alt="Food 7">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Salahuddin Bakery</h3>
+                            <p class="street"><strong>Street:</strong> Jalan Wong Ah Fook</p>
+                            <p>Halal-certified bakery near City Square Mall, JB, serving freshly baked bread and
+                                pastries for over 80 years.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 8 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.3.1.15 shop8.jpg" alt="Restaurant 8">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.16 food8.jpg" alt="Food 8">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Penang Char Kuey Teow</h3>
+                            <p class="street"><strong>Street:</strong> New Lane</p>
+                            <p>Sample description for food 8.</p>
+                        </div>
+                    </div>
+
+                    <!-- Food Card 9 -->
+                    <div class="food-card">
+                        <div class="food-image">
+                            <img src="/Assignment/Chong Zhi Cong/images/3.1.1.18 food9.jpg" alt="Restaurant 9">
+                            <div class="overlay">
+                                <img src="/Assignment/Chong Zhi Cong/images/3.3.1.17 food9.jpg" alt="Food 9">
+                            </div>
+                        </div>
+                        <div class="food-description">
+                            <h3>Old China Cafe</h3>
+                            <p class="street"><strong>Street:</strong> Petaling Street</p>
+                            <p>Old China Cafe in Petaling Street serves flavorful Peranakan dishes like beef rendang and
+                                Nyonya Pai Tee.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-placeholder">
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+        <script src="/Assignment/JS/FoodStreetGuide.js"></script>
+        <script src="/Assignment/JS/footer.js"></script>
+    </body>
+
+
+</html>

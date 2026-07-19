@@ -1,0 +1,159 @@
+body{
+    background-color: #0000001e;
+}
+
+nav{
+    opacity: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.links-container > a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.links-container > a:hover{
+    color: #dbb620;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav > h1 > a{
+    color: black;
+    text-decoration: none;
+}
+
+.hero-container {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url("/Assignment/Shak Yong Sim/Food Festivals/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  padding: 100px 20px;
+}
+
+.hero-container h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 300;
+}
+
+.hero-container p {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 500;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    padding: 40px 0px;
+}
+
+.upcoming-events-container{
+    background-color: #eab44891;
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 0 10vh;
+    gap: 30px;
+}
+
+.upcoming-event{
+    background-color: #ffffff;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 9fr;
+    width: 100%;
+}
+
+.upcoming-event h1{
+    grid-row: 1;
+    grid-column: 1;
+    padding: 40px 40px 40px 50px;
+}
+
+.upcoming-event > .event-header{
+    grid-row: 1;
+    grid-column: 2 / 3;
+    text-align: left;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.upcoming-event img{
+    grid-row: 2;
+    grid-column: 2 / 3;
+    max-width: 80%;
+    height: auto;
+    max-height: 300px;
+    margin: 0 0 0 30px; /* remove side margins */
+}
+
+.upcoming-event > p{
+    grid-row: 3;
+    grid-column: 2 / 3;
+    padding: 0 30px 0px 30px;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .upcoming-events-container{
+        background-color: #eab44891;
+        display: grid;
+        grid-template-rows: repeat(10, auto);
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .upcoming-event{
+        background-color: #ffffff;
+        grid-column: 1;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .upcoming-event h1{
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+        padding: 40px 40px 0 50px;
+    }
+
+    .upcoming-event .event-header{
+        grid-row: 2;
+        grid-column: 1;
+        text-align: left;
+        padding: 30px;
+        padding-bottom: 0;
+    }
+
+    .upcoming-event img{
+        grid-row: 3;
+        grid-column: 1;
+        max-width:80%;
+        /*height: auto;*/
+        max-height: 300px;
+        margin: 1em auto; 
+    }
+
+    .upcoming-event > p{
+        grid-row: 4;
+        grid-column: 1;
+        padding: 0 30px 0px 30px;
+        width: 100%;
+    }
+}

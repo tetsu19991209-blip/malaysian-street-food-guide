@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Street Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css" />
+    <link rel="stylesheet" href="/Assignment/CSS/PopularDishes.css" />
+
+</head>
+
+<body>
+
+    <body class="pt-5">
+        <!-- Header -->
+        <header class="header shadow-sm fixed-top bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+                    <!-- Toggle button beside logo -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navigation & Search -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/Home.html">
+                                    <i class="fas fa-home"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/discover-food.html">
+
+                                    <i class="fas fa-utensils"></i> Discover by Cuisine
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/discover-location.html">
+                                    <i class="fas fa-map-marker-alt"></i> Discover by Location
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/FoodStreetGuide.html">
+                                    <i class="fas fa-street-view"></i> Food Streets Details
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/PopularDishes.html"
+                                    style="background-color:#060606; padding: 8px 10px; color:white;">
+                                    <i class="fas fa-fire"></i> Popular Dishes
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                                    <i class="fas fa-calendar-alt"></i> Events & Festivals
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/VisitorTips.html">
+                                    <i class="fas fa-lightbulb"></i> Visitor Tips
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html">
+                                    <i class="fas fa-bookmark"></i> Bookmarked Page
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-container">
+            <h1>Taste the most popular street foods.</h1>
+            <p>From local favorites to iconic dishes, explore what everyone’s craving and don’t miss out on these
+                must-try bites.</p>
+        </div>
+
+
+        <main>
+            <!-- Page Section Navigation Dropdown -->
+            <div class="page-nav" id="pageNav">
+                <button id="navToggle">📑</button>
+                <div class="nav-content" id="navContent">
+                    <label for="section-select">Jump to:</label>
+                    <select id="section-select" onchange="location = this.value;">
+                        <option value="#top">🔝Go Top</option>
+                        <option value="#section1">Top 10 Popular Dishes</option>
+                        <option value="#section2">Popular Dishes by Categories</option>
+                        <option value="#section3">Popular Dishes by State</option>
+                    </select>
+                </div>
+            </div>
+            <section id="section1" class="container my-5">
+                <h2 class="text-center mb-4">Top 10 Popular Dishes</h2>
+
+                <div class="top10-cards-wrapper d-flex overflow-auto">
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.1.nasilemak.jpg" class="card-img-top"
+                            alt="Nasi Lemak">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasi Lemak</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.2.roticanai.jpg" class="card-img-top"
+                            alt="Roti Canai">
+                        <div class="card-body">
+                            <h5 class="card-title">Roti Canai</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.3hokkienmee.jpg" class="card-img-top"
+                            alt="Hokkien Mee">
+                        <div class="card-body">
+                            <h5 class="card-title">Hokkien Mee</h5>
+                        </div>
+                    </div>
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.4.rendang.jpg" class="card-img-top"
+                            alt="Rendang">
+                        <div class="card-body">
+                            <h5 class="card-title">Rendang</h5>
+                        </div>
+                    </div>
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.5charkueyteow.jpg" class="card-img-top"
+                            alt="Char Kuey Teow">
+                        <div class="card-body">
+                            <h5 class="card-title">Char Kuey Teow</h5>
+                        </div>
+                    </div>
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.6satay.jpg" class="card-img-top" alt="Satay">
+                        <div class="card-body">
+                            <h5 class="card-title">Satay</h5>
+                        </div>
+                    </div>
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.7laksa.jpg" class="card-img-top" alt="laksa">
+                        <div class="card-body">
+                            <h5 class="card-title">Laksa</h5>
+                        </div>
+                    </div>
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.8bahkutteh.jpg" class="card-img-top"
+                            alt="Bah Kut Teh">
+                        <div class="card-body">
+                            <h5 class="card-title">Bah Kut Teh</h5>
+                        </div>
+                    </div>
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.9chickenrice.jpg" class="card-img-top"
+                            alt="Chicken Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Roast Chicken Rice</h5>
+                        </div>
+                    </div>
+
+                    <div class="card top10-card me-3">
+                        <img src="/Assignment/Chong Zhi Cong/images2/2.10 Nasi Kerabu.jpg" class="card-img-top"
+                            alt="Nasi Kerabu">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasi Kerabu</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- Food Detail Section -->
+                <section id="food-detail" class="container my-5 detail-section">
+
+                    <!-- Nasi Lemak -->
+                    <div id="detail-nasilemak" class="food-detail row mb-5 align-items-center">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.1nasilemak.jpg" alt="Nasi Lemak">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Nasi Lemak</h2>
+                            <p class="detail-desc">Coconut rice with sambal</p>
+                            <p class="detail-info">
+                                Nasi Lemak originated from the Malay communities as a traditional breakfast, now
+                                regarded as
+                                Malaysia's national dish.
+                                The rice is cooked in rich coconut milk and pandan leaves, giving it a fragrant aroma
+                                and soft,
+                                fluffy texture.
+                                Traditionally served with spicy sambal, crispy fried anchovies, roasted peanuts,
+                                hard-boiled
+                                eggs, and fresh cucumber slices.
+                                Ingredients are usually steamed and arranged together before serving.
+                                With its harmonious combination of creamy, spicy, and savory flavors, Nasi Lemak is a
+                                must-try
+                                street food throughout Malaysia,
+                                especially popular in Kuala Lumpur and Penang.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Roti Canai -->
+                    <div id="detail-roticanai" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.2roticanai.jpg" alt="Roti Canai">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Roti Canai</h2>
+                            <p class="detail-desc">Flaky flatbread with curry dip</p>
+                            <p class="detail-info">
+                                Roti Canai was introduced to Malaysia by Indian Muslim immigrants and quickly became a
+                                beloved
+                                local flatbread.
+                                The dough is made from flour, water, salt, and ghee, then repeatedly flipped, stretched,
+                                and
+                                folded to create thin, crispy layers outside and soft inside.
+                                Pan-fried on a hot griddle, it is usually served with dhal, chicken curry, or sugar for
+                                a sweet
+                                variation.
+                                This versatile breakfast and snack item represents Malaysia's multicultural street food
+                                scene,
+                                particularly popular in Penang and Kuala Lumpur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hokkien Mee -->
+                    <div id="detail-hokkienmee" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.3hokkienmee.jpg" alt="Hokkien Mee">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Penang Hokkien Mee</h2>
+                            <p class="detail-desc">Spicy prawn noodle soup with pork and egg</p>
+                            <p class="detail-info">
+                                Penang Hokkien Mee, also called prawn noodle soup, comes from the Hokkien Chinese
+                                community of
+                                Penang.
+                                Unlike other versions with dark soy sauce, this dish features a rich reddish prawn and
+                                pork
+                                broth.
+                                It includes yellow egg noodles, rice vermicelli, succulent prawns, slices of pork,
+                                boiled egg,
+                                and crispy fried shallots.
+                                The broth is simmered for hours using prawn heads, shells, and pork bones to extract
+                                deep
+                                flavors.
+                                Served with lime and sambal chili, it is a quintessential Malaysian street food,
+                                famously
+                                enjoyed in George Town, Penang.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Rendang -->
+                    <div id="detail-rendang" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.4rendang.jpg" alt="Rendang">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Rendang</h2>
+                            <p class="detail-desc">Slow-cooked spicy beef</p>
+                            <p class="detail-info">
+                                Rendang is a traditional Malay festive dish with origins in the Minangkabau culture.
+                                It features beef slowly cooked in coconut milk with a mixture of aromatic spices,
+                                including
+                                lemongrass, ginger, turmeric, garlic, and chili, until tender and richly flavored.
+                                The slow cooking process allows the meat to absorb the spices fully and the sauce to
+                                thicken.
+                                Rendang is a celebrated Malaysian dish, often served during special occasions, and
+                                street
+                                vendors selling Rendang are especially popular in Kuala Lumpur and Malacca.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Char Kuey Teow -->
+                    <div id="detail-charkueyteow" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.5CharKueyTeow.jpg" alt="Char Kuey Teow">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Char Kuey Teow</h2>
+                            <p class="detail-desc">Stir-fried flat rice noodles</p>
+                            <p class="detail-info">
+                                Char Kuey Teow is a classic Malaysian stir-fried noodle dish that originated from the
+                                Chinese
+                                communities in Penang.
+                                Flat rice noodles are stir-fried over high heat with prawns, Chinese sausage, egg, bean
+                                sprouts,
+                                chives, and soy sauce, producing a smoky “wok hei” aroma.
+                                The dish is quick-cooked to maintain the texture of noodles and freshness of
+                                ingredients.
+                                Known for its savory and slightly sweet flavor, it is a signature street food in Penang,
+                                especially at night markets.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Satay -->
+                    <div id="detail-satay" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.6Satay.jpg" alt="Satay">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Satay</h2>
+                            <p class="detail-desc">Grilled meat skewers with peanut sauce</p>
+                            <p class="detail-info">
+                                Satay is a popular Malaysian dish of skewered meat, typically chicken, beef, or lamb,
+                                marinated
+                                with spices and grilled over charcoal.
+                                Served with a rich peanut sauce, sliced cucumbers, onions, and compressed rice cakes, it
+                                balances sweet, salty, and savory flavors.
+                                The marination and grilling give the meat a smoky aroma and tender texture.
+                                Satay represents the Malay culinary heritage and is widely enjoyed at street food
+                                stalls,
+                                particularly in Kajang, Selangor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Laksa -->
+                    <div id="detail-laksa" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.7Laksa.jpg" alt="Laksa">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Laksa</h2>
+                            <p class="detail-desc">Spicy noodle soup with coconut milk</p>
+                            <p class="detail-info">
+                                Laksa is a spicy noodle soup blending Chinese and Malay culinary traditions.
+                                Noodles are served in a fragrant coconut milk-based soup or tamarind-based sour soup,
+                                combined
+                                with shrimp, chicken, tofu, herbs, and spices.
+                                The broth is simmered with shrimp shells or fish stock to enhance flavor.
+                                This iconic Malaysian dish showcases the country's multicultural flavors and is
+                                especially
+                                popular in Penang and Peranakan communities in Melaka.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bah Kut Teh -->
+                    <div id="detail-bahkutteh" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.8Bahkutteh.png" alt="Bah Kut Teh">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Bah Kut Teh</h2>
+                            <p class="detail-desc">Pork rib soup with herbs</p>
+                            <p class="detail-info">
+                                Bah Kut Teh, meaning "meat bone tea," is a Chinese-Malay herbal soup featuring pork ribs
+                                simmered in a fragrant broth of herbs and spices, including star anise, cinnamon,
+                                cloves,
+                                garlic, and pepper.
+                                The slow simmering tenderizes the meat and infuses the soup with rich flavors.
+                                Traditionally served with steamed rice, tofu, and vegetables, it represents Malaysia’s
+                                Chinese
+                                culinary heritage.
+                                It is a popular street food in Klang and Kuala Lumpur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Roast Chicken Rice -->
+                    <div id="detail-roastchickenrice" class="food-detail row mb-5 align-items-center"
+                        style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.9RoastChickenRIce.jpg" alt="Chicken Rice">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Roast Chicken Rice</h2>
+                            <p class="detail-desc">Tender roasted chicken with rice</p>
+                            <p class="detail-info">
+                                Roast Chicken Rice is a simple yet beloved Malaysian dish consisting of juicy roasted
+                                chicken
+                                served over fragrant rice cooked in chicken broth and garlic.
+                                The chicken is marinated with spices and roasted to achieve crispy skin and tender meat.
+                                Accompanied by chili sauce and light soup, it exemplifies Malaysian comfort food.
+                                It is widely available at street stalls and hawker centers, especially in Ipoh and
+                                Penang.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Nasi Kerabu -->
+                    <div id="detail-nasikerabu" class="food-detail row mb-5 align-items-center" style="display:none;">
+                        <div class="col-md-6">
+                            <img class="detail-img img-fluid rounded"
+                                src="/Assignment/Chong Zhi Cong/images2/3.10Nasikerabu.jpg" alt="Nasi Kerabu">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="detail-name fw-bold">Nasi Kerabu</h2>
+                            <p class="detail-desc">Blue rice with herbs and vegetables</p>
+                            <p class="detail-info">
+                                Nasi Kerabu is a traditional Malay dish featuring vibrant blue rice colored with
+                                butterfly pea
+                                flowers, served with fresh herbs, shredded coconut, fried fish or chicken, and spicy
+                                sambal.
+                                The rice is steamed and then combined with a variety of local vegetables and condiments.
+                                Known for its striking appearance and balanced flavors of herbal, spicy, and savory, it
+                                is a
+                                representative Malaysian street food, particularly popular in Kelantan and Terengganu.
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+
+
+            <!-- Section 2: Categories -->
+            <section id="section2" class="container my-5 section-bg">
+                <h2 class="text-center mb-4">Popular Dishes by Category</h2>
+
+                <div class="row">
+                    <!-- Vertical Tabs -->
+                    <div class="col-md-3">
+                        <div class="nav flex-column nav-pills" id="dishTabs" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="rice-tab" data-bs-toggle="pill" data-bs-target="#rice"
+                                type="button">Rice</button>
+                            <button class="nav-link" id="noodles-tab" data-bs-toggle="pill" data-bs-target="#noodles"
+                                type="button">Noodles</button>
+                            <button class="nav-link" id="seafood-tab" data-bs-toggle="pill" data-bs-target="#seafood"
+                                type="button">Seafood</button>
+                            <button class="nav-link" id="snacks-tab" data-bs-toggle="pill" data-bs-target="#snacks"
+                                type="button">Snacks</button>
+                            <button class="nav-link" id="soups-tab" data-bs-toggle="pill" data-bs-target="#soups"
+                                type="button">Soups</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="col-md-9">
+                        <div class="tab-content" id="dishTabsContent">
+                            <!-- Rice -->
+                            <div class="tab-pane fade show active" id="rice">
+                                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.1.nasilemak.jpg"
+                                            class="dish-img rounded mb-2" alt="Nasi Lemak">
+                                        <h5>Nasi Lemak</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.9chickenrice.jpg"
+                                            class="dish-img rounded mb-2" alt="Roast Chicken Rice">
+                                        <h5>Roast Chicken Rice</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.10 Nasi Kerabu.jpg"
+                                            class="dish-img rounded mb-2" alt="Nasi Kerabu">
+                                        <h5>Nasi Kerabu</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Noodles -->
+                            <div class="tab-pane fade" id="noodles">
+                                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.3hokkienmee.jpg"
+                                            class="dish-img rounded mb-2" alt="Hokkien Mee">
+                                        <h5>Hokkien Mee</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.5charkueyteow.jpg"
+                                            class="dish-img rounded mb-2" alt="Char Kuey Teow">
+                                        <h5>Char Kuey Teow</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.7laksa.jpg"
+                                            class="dish-img rounded mb-2" alt="Laksa">
+                                        <h5>Laksa</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Seafood -->
+                            <div class="tab-pane fade" id="seafood">
+                                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/5.1prawn.jpg"
+                                            class="dish-img rounded mb-2" alt="Prawn fritters">
+                                        <h5>Grilled Stingray</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/5.2fishcrackers.jpg"
+                                            class="dish-img rounded mb-2" alt="Fish crackers">
+                                        <h5>Fish Crackers</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/5.3ikanbakar.jpg"
+                                            class="dish-img rounded mb-2" alt="Ikan Bakar">
+                                        <h5>Ikan Bakar</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Snacks -->
+                            <div class="tab-pane fade" id="snacks">
+                                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.2.roticanai.jpg"
+                                            class="dish-img rounded mb-2" alt="Roti Canai">
+                                        <h5>Roti Canai</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.6satay.jpg"
+                                            class="dish-img rounded mb-2" alt="Satay Ayam">
+                                        <h5>Satay Ayam</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/5.5popiah.png"
+                                            class="dish-img rounded mb-2" alt="Popiah Roll">
+                                        <h5>Popiah Roll</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Soups -->
+                            <div class="tab-pane fade" id="soups">
+                                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/2.8bahkutteh.jpg"
+                                            class="dish-img rounded mb-2" alt="Bah Kut Teh">
+                                        <h5>Bah Kut Teh</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/5.4abcsoup.jpg"
+                                            class="dish-img rounded mb-2" alt="ABC soup">
+                                        <h5>ABC soup</h5>
+                                    </div>
+                                    <div class="mb-3 text-center">
+                                        <img src="/Assignment/Chong Zhi Cong/images2/5.5sotoayam.jpg"
+                                            class="dish-img rounded mb-2" alt="Soto Ayam">
+                                        <h5>Soto Ayam</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discover by Food button -->
+                        <div class="text-end mt-4">
+                            <a href="/Assignment/HTML/discover-food.html" class="btn btn-primary">Discover by Food →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Popular Street Food by State -->
+            <section id="section3" class="container my-5 section-bg">
+                <h2 class="text-center mb-4">Popular Street Food by State</h2>
+
+                <div class="row">
+                    <!-- Vertical Tabs -->
+                    <div class="col-md-3">
+                        <div class="nav flex-column nav-pills" id="stateTabs" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#johor">Johor</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#kedah">Kedah</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#kelantan">Kelantan</button>
+                            <button class="nav-link" data-bs-toggle="pill"
+                                data-bs-target="#terengganu">Terengganu</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pahang">Pahang</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#perak">Perak</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#penang">Penang</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#selangor">Selangor</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#negeri-sembilan">Negeri
+                                Sembilan</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#melaka">Melaka</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#sabah">Sabah</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#sarawak">Sarawak</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#perlis">Perlis</button>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="col-md-9">
+                        <div class="tab-content" id="stateTabsContent">
+
+                            <!-- Johor -->
+                            <div class="tab-pane fade show active" id="johor">
+                                <div class="food-list">
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.1laksajohor.jpeg"
+                                            alt="Laksa Johor" class="food-img"><span>Laksa Johor</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.2asam pedas.jpg" alt="Asam Pedas"
+                                            class="food-img"><span>Asam Pedas</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.3otak-otak.jpg" alt="Otak-Otak"
+                                            class="food-img"><span>Otak-Otak</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/2.8bahkutteh.jpg" alt="Bah Kut Teh"
+                                            class="food-img"><span>Bah Kut Teh</span></div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Restoran Woon Kiang</li>
+                                    <li>Hiap Joo Bakery & Biscuit Factory</li>
+                                    <li>Kedai Bah Kut Teh Hin Hock</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Johor: </strong>Johor Jaya Food Street</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.376502567857!2d103.8033177!3d1.5403851999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6c1728cfc6df%3A0x68063d9e60ca4b2f!2z5p-U5L2b5YaN5Lmf5aSc5biC!5e0!3m2!1szh-CN!2smy!4v1756125620164!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+
+                            <!-- Kedah -->
+                            <div class="tab-pane fade" id="kedah">
+                                <div class="food-list">
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.4laksakedah.jpg" alt="Laksa Kedah"
+                                            class="food-img"><span>Laksa Kedah</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.5gulai-temenung.jpg"
+                                            alt="Gulai Temenung" class="food-img"><span>Gulai Temenung</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.6nasi-lemak-royale.jpg"
+                                            alt="Nasi Lemak Royale" class="food-img"><span>Nasi Lemak Royale</span>
+                                    </div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.7iman-kueyteow.jpg"
+                                            alt="Iman Kuey Teow" class="food-img"><span>Iman Kuey Teow</span></div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Siew Hong Law Kedai Kopi</li>
+                                    <li>Restoran Jiar Yuan</li>
+                                    <li>Keng Kong Ramen</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Kedah: </strong>Sungai Petani</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254105.53728504683!2d100.38372054927403!3d5.655280704496856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b29cd930f8bcf%3A0xcbb5708a39597903!2z5ZCJ5omT5Y-M5rqq5aSn5bm0!5e0!3m2!1szh-CN!2smy!4v1756164280380!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+
+                            <!-- Kelantan -->
+                            <div class="tab-pane fade" id="kelantan">
+                                <div class="food-list">
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.10NasiUlam.jpg" alt="Nasi Ulam"
+                                            class="food-img"><span>Nasi Ulam</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.9 Nasi Kerabu.jpg"
+                                            alt="Nasi Kerabu" class="food-img"><span>Nasi Kerabu</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.11NasiDagang.jpg"
+                                            alt="Nasi Dagang" class="food-img"><span>Nasi Dagang</span></div>
+                                    <div class="food-item"><img src="/Assignment/Chong Zhi Cong/images2/7.12Laksam.jpg"
+                                            alt="Laksam" class="food-img"><span>Laksam</span></div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Medan Selera Ceria 303</li>
+                                    <li>Artaste Cafe</li>
+                                    <li>Namchai Cafe</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Kelantan: </strong>Pasar Besar Siti Khadijah, Kota
+                                    Bahru</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.004547354701!2d102.23667507498962!3d6.130089093856688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6afcf1ff59eb7%3A0x1e2ad0e97bedfb4c!2z6KW_6JKC5Y2h6L-q5ZiJ5aSn5be05Yi5!5e0!3m2!1szh-CN!2smy!4v1756165908782!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+
+                            <!-- Terengganu -->
+                            <div class="tab-pane fade" id="terengganu">
+                                <div class="food-list">
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.13NasiDagang.png"
+                                            alt="Nasi Dagang" class="food-img"><span>Nasi Dagang</span></div>
+                                    <div class="food-item"><img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.14keropoklekor.png"
+                                            alt="Keropok Lekor" class="food-img"><span>Keropok Lekor</span></div>
+                                    <div class="food-item"><img src="/Assignment/Chong Zhi Cong/images2/7.15sata.png"
+                                            alt="Sata" class="food-img"><span>Sata</span></div>
+                                    <div class="food-item"><img src="/Assignment/Chong Zhi Cong/images2/7.16Nekbat.png"
+                                            alt="Nekbat" class="food-img"><span>Nekbat</span></div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>The Vinum Xchange</li>
+                                    <li>MareNero - The Taaras Redang</li>
+                                    <li>Restoran Golden Dragon</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Terengganu: </strong>Pasar Payam, Kuala Terengganu</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.519746561774!2d103.13353967498361!3d5.337320194641285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7be79ae171233%3A0x81078a59d7270577!2sPasar%20Payang!5e0!3m2!1szh-CN!2smy!4v1756166767098!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+
+                            <!-- Pahang -->
+                            <div class="tab-pane fade" id="pahang">
+                                <div class=" food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.17ikanpatin.jpg"
+                                            alt="Ikan Patin Masak Tempoyak" class="food-img"> <span>Ikan Patin Masak
+                                            Tempoyak</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.18puddingraja.jpeg"
+                                            alt="Puding Raja" class="food-img"> <span>Puding Raja</span> </div>
+                                    <div class="food-item"> <img src="/Assignment/Chong Zhi Cong/images2/7.19lemang.jpg"
+                                            alt=" Lemang" class="food-img">
+                                        <span>Lemang</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.20pulutpanggang.png"
+                                            alt="Pulut Panggang" class="food-img"> <span>Pulut Panggang</span> </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Akob Patin House3</li>
+                                    <li>Puteh Beach Bar</li>
+                                    <li>Alor Akar Restaurant</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Pahang: </strong>Jalan Air Putih, Kuantan</p> <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.9241722198653!2d103.33375417180693!3d3.826431648622679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c8bac204ca063d%3A0x8d6b5018436ee30c!2s1%2C%20Jalan%20Air%20Putih%2C%20Taman%20Harapan%2C%2025300%20Kuantan%2C%20Pahang!5e0!3m2!1szh-CN!2smy!4v1756167678816!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Perak -->
+                            <div class="tab-pane fade" id="perak">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.21 CheeCheongFun.jpg"
+                                            alt="Chee Cheong Fun" class="food-img"> <span>Chee Cheong Fun</span> </div>
+                                    <div class="food-item"> <img src="/Assignment/Chong Zhi Cong/images2/7.22Dimsum.jpg"
+                                            alt="Dim SUm" class="food-img">
+                                        <span>Dim Sum</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.23TauFuFa.jpg" alt="Tau Fu Fa"
+                                            class="food-img">
+                                        <span>Tau Fu Fa</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.24wantan-mee.jpg"
+                                            alt="Wan Tan Mee" class="food-img"> <span>Wan Tan Mee</span> </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Chooi Yue Dim Sum Ipoh</li>
+                                    <li>Red Brick Kitchen</li>
+                                    <li>Breda Cafe</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Perak: </strong>Tong Sui Kai, Ipohn</p> <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.994723314633!2d101.08456107181108!3d4.59496694257168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caec63e996d9e9%3A0x5f27865daf57404e!2z57OW5rC06KGX5bCP6aOf5Lit5b-D!5e0!3m2!1szh-CN!2smy!4v1756168710719!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Penang -->
+                            <div class="tab-pane fade" id="penang">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.25charkueyteow.jpg"
+                                            alt="Char Kuey Teow" class="food-img"> <span>Char Kuey Teow</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.26penanghokkienmee.png"
+                                            alt="Hokkien Mee Penang" class="food-img"> <span>Hokkien Mee Penang</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.27asamlaksa.jpg" alt="Asam Laksa"
+                                            class="food-img">
+                                        <span>Asam Laksa</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.28penangojian.jpg" alt="O Jian"
+                                            class="food-img">
+                                        <span>O Jian</span>
+                                    </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Paya Terubong Nasi Lemak</li>
+                                    <li>CY Choy Road Hokkien Mee</li>
+                                    <li>Air Itam Sister Curry Mee</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Penang: </strong>Chulia Street Hawker Center, George
+                                    Town</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.9922166883207!2d100.33370797181708!3d5.418151135027048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3904b1d7b37%3A0xd6f5c65a3d16a52!2sChulia%20Street%20Hawker%20Food!5e0!3m2!1szh-CN!2smy!4v1756169258530!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Selangor -->
+                            <div class="tab-pane fade" id="selangor">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.29klangbahkutteh.jpg"
+                                            alt="Klang Bah Kut Teh" class="food-img"> <span>Klang Bah Kut Teh</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.30nasiambeng.jpg"
+                                            alt="Nasi Ambeng" class="food-img"> <span>Nasi Ambeng</span> </div>
+                                    <div class="food-item"> <img src="/Assignment/Chong Zhi Cong/images2/7.31satay.jpg"
+                                            alt="Satay" class="food-img">
+                                        <span>Satay</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.32popiahgoreng.jpg"
+                                            alt="Popiah Goreng" class="food-img"> <span>Popiah Goreng</span> </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Law Tian Bah Kut Teh, Klang</li>
+                                    <li>Abah Street Food and Partner</li>
+                                    <li>The 14: Street Food</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Selangor: </strong>Jalan SS2, Petaling Jaya</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9108962744117!2d101.6224043!3d3.1182702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4953ff5a1811%3A0x3990022b43f10e0b!2sSS2%20Night%20Market!5e0!3m2!1szh-CN!2smy!4v1756171356246!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Negeri Sembilan -->
+                            <div class="tab-pane fade" id="negeri-sembilan">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.33masakapi.png"
+                                            alt="Masak Lemak Cili Api" class="food-img"> <span>Masak Lemak Cili
+                                            Api</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.34rendang.png"
+                                            alt="Rendang Minang" class="food-img"> <span>Rendang Minang</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.35nasiulam.png" alt="Nasi Ulam"
+                                            class="food-img">
+                                        <span>Nasi Ulam</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.36sambaltempoyak.png"
+                                            alt="Sambal Tempoyak Daun Kayu" class="food-img"> <span>Sambal Tempoyak Daun
+                                            Kayu</span>
+                                    </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Seremban Street Food</li>
+                                    <li>N-nine food court</li>
+                                    <li>D'Corner Street Food</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Negeri Sembilan: </strong>Seremban Street Food</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255058.8695984776!2d101.65031378671873!3d2.728591900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cddd9cc51439e3%3A0x6dc9f45970c25fa7!2sSeremban%20Street%20Food!5e0!3m2!1szh-CN!2smy!4v1756172655848!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Melaka -->
+                            <div class="tab-pane fade" id="melaka">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.37Klebangcoconut.jpg"
+                                            alt="Klebang Coconut Milk Shake" class="food-img"> <span>Klebang Coconut
+                                            Milk
+                                            Shake</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.38Nyonyalaksa.png"
+                                            alt="Nyonya Laksa" class="food-img"> <span>Nyonya Laksa</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.39Nyonyakuih.png"
+                                            alt="Nyonya Kuih" class="food-img"> <span>Nyonya Kuih</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.40ikanbakar.png" alt="Ikan Bakar"
+                                            class="food-img">
+                                        <span>Ikan Bakar</span>
+                                    </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Jonker Street Kopitiam </li>
+                                    <li>Lock Ten Food </li>
+                                    <li>Pahlawan Walk Night Market</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Melaka: </strong>Jonker Street Night Market</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1020642.1364477259!2d101.09214014687494!3d2.19780870000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f12cb5376d13%3A0x95dbea6bd4ccfadf!2sJonker%20Street%20Night%20Market%20-%20Street%20Food!5e0!3m2!1szh-CN!2smy!4v1756173074658!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Sabah -->
+                            <div class="tab-pane fade" id="sabah">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.41Ngiu Chap.jpg" alt="Ngiu Chap"
+                                            class="food-img">
+                                        <span>Ngiu Chap</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.42Tuaran Mee.jpg" alt="Tuaran Mee"
+                                            class="food-img">
+                                        <span>Tuaran Mee</span>
+                                    </div>
+                                    <div class="food-item"> <img src="/Assignment/Chong Zhi Cong/images2/7.43Hinava.jpg"
+                                            alt="Ninava" class="food-img">
+                                        <span>Ninava</span>
+                                    </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.44Sabahbutod.jpg" alt="Butod"
+                                            class="food-img">
+                                        <span>Sabah Butod</span>
+                                    </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Jalan Gaya (Gaya Street, Kota Kinabalu) </li>
+                                    <li>Jalan Tun Fuad Stephens </li>
+                                    <li>Jalan Pantai</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Sabah: </strong>KK Food Street</p> <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63490.17298609152!2d116.00155312167969!3d5.976029200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b6996d3bfcff3%3A0xf4af504b0571e538!2sKK%20Food%20Street!5e0!3m2!1szh-CN!2smy!4v1756175989525!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Sarawak -->
+                            <div class="tab-pane fade" id="sarawak">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.45sarawakmee.jpg" alt="Kolo Mee"
+                                            class="food-img"> <span>Kolo Mee</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.46manokpanso.jpg"
+                                            alt="Manok Pansoh" class="food-img"> <span>Manok Pansoh</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.47Sarawaklaksa.png"
+                                            alt="Sarawak Laksa" class="food-img"> <span>Sarawak Laksa</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.48tebaloi.jpg" alt="Terbaloi"
+                                            class="food-img">
+                                        <span>Terbaloi</span>
+                                    </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Carpenter Street,Kuching </li>
+                                    <li>Top Spot Food Court</li>
+                                    <li>Main Bazaar (Kuching Waterfront)</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Sarawak: </strong>38 Food Street, Stutong Baru</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63814.382969082!2d110.29813393495024!3d1.5283542092394682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba0d4a7af4949%3A0x8fb2231ba8600613!2s38%20Food%20Street%2C%20Stutong%20Baru!5e0!3m2!1szh-CN!2smy!4v1756176055449!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Perlis -->
+                            <div class="tab-pane fade" id="perlis">
+                                <div class="food-list">
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.50pulutmempelam.png"
+                                            alt="Pulut Mempelam" class="food-img"> <span>Pulut Mempelam</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.49laksaperlis.png"
+                                            alt="Laksa Perlis" class="food-img"> <span>Laksa Perlis</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.51kuihdangai.png"
+                                            alt="Kuih Dangai" class="food-img"> <span>Kuih Dangai</span> </div>
+                                    <div class="food-item"> <img
+                                            src="/Assignment/Chong Zhi Cong/images2/7.52PekasamPuyu.png"
+                                            alt="Pekasam Puyur" class="food-img"> <span>Pekasam Puyu</span> </div>
+                                </div>
+                                <p><strong>Recommendation Stalls or restaurant</strong></p>
+                                <ul>
+                                    <li>Jalan Seruling (Arau Night Market) </li>
+                                    <li>Jalan Penjara Lama (Kangar Night Market - Pasar Malam Kangar) </li>
+                                    <li>Jalan Bukit Lagi</li>
+                                </ul>
+                                <p><strong>Popular Food Street in Perlis: </strong>Santai Kangar Jaya</p> <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.892502210634!2d100.17656587499187!3d6.407847093582941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c99000c1d25ef%3A0x68409fb1393be223!2sSANTAI%20KANGAR%20JAYA%20-%20Street%20Food!5e0!3m2!1szh-CN!2smy!4v1756175578877!5m2!1szh-CN!2smy"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <!-- Discover by Location button -->
+                            <div class="text-end mt-4">
+                                <a href="discover-location.html" class="btn btn-primary">Discover by Location &rarr;</a>
+                            </div>
+                        </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <div id="footer-placeholder">
+        </div>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+        <script src="/Assignment/JS/PopularDishes.js"></script>
+        <script src="/Assignment/JS/footer.js"></script>
+    </body>
+
+
+</html>

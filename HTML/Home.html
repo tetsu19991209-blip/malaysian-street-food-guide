@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QualiFood-Home Page</title>
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Assignment/CSS/Home.css">
+    <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css">
+</head>
+
+<body class="pt-5">
+    <!-- Header -->
+    <header class="header shadow-sm fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+                <!-- Toggle button beside logo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation & Search -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Home.html">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-food.html">
+                                <i class="fas fa-utensils"></i> Discover by Cuisine
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-location.html">
+                                <i class="fas fa-map-marker-alt"></i> Discover by Location
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/FoodStreetGuide.html">
+                                <i class="fas fa-street-view"></i> Food Streets Details
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/PopularDishes.html">
+                                <i class="fas fa-fire"></i> Popular Dishes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                                <i class="fas fa-calendar-alt"></i> Events & Festivals
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/VisitorTips.html">
+                                <i class="fas fa-lightbulb"></i> Visitor Tips
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html">
+                                <i class="fas fa-bookmark"></i> Bookmarked Page
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hero-container">
+        <h1>Your guide to the world's best street food.</h1>
+        <p> hidden gems, discover local favorites, and find your next delicious adventure.</p>
+    </div>
+    <main>
+        <section id="popular-food-streets">
+            <h2>Featured Street Food Locations</h2>
+            <p><a href="/Assignment/HTML/FoodStreetGuide.html">Find out more</a></p>
+            <div class="popular-food-streets-container rounded-5">
+                <div class="location-container item-1 rounded-5">
+                    <img src="/Assignment/Shak Yong Sim/Food Streets/jalan-alor.jpg" class="rounded-4">
+                    <div class="location-paragraph-container">
+                        <h3>Jalan Alor Kuala Lumpur</h3>
+                        <p>Jalan Alor is arguably Kuala Lumpur's most famous food street. As the sun sets, the street
+                            transforms into a bustling open-air food court with a vibrant atmosphere. You can find
+                            everything from grilled chicken wings and satay to Hokkien mee, seafood, and a wide array of
+                            local fruits. It's a great spot for tourists looking to sample a wide variety of Malaysian
+                            street food in one place.</p>
+                    </div>
+                </div>
+                <div class="location-container item-2 rounded-5">
+                    <img src="/Assignment/Shak Yong Sim/Food Streets/Petaling-street.jpg" class="rounded-4">
+                    <div class="location-paragraph-container">
+                        <h3>Petaling Street Kuala Lumpur</h3>
+                        <p>While known for its market stalls selling clothes and souvenirs, Petaling Street also has a
+                            long history as a food haven. Hidden within the bustling market, you'll find legendary
+                            stalls serving up traditional Chinese dishes like chee cheong fun, wantan mee, and claypot
+                            chicken rice. It's an authentic experience that takes you back in time.</p>
+                    </div>
+                </div>
+                <div class="location-container item-3 rounded-5">
+                    <img src="/Assignment/Shak Yong Sim/Food Streets/penang-new-lane.jpg" class="rounded-4">
+                    <div class="location-paragraph-container">
+                        <h3>New Lane Street Food Stalls, George Town, Penang</h3>
+                        <p> Penang is a legendary food destination, and New Lane is a must-visit. This food court-style
+                            street offers a fantastic variety of Penang's most celebrated dishes, including char koay
+                            teow, oyster omelette, and assam laksa. It's a popular spot for both locals and tourists
+                            seeking the authentic flavors of Penang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="trending-dishes">
+            <h2>Trending Dishes</h2>
+            <p><a href="/Assignment/HTML/PopularDishes.html">Find out more</a></p>
+            <div class="trending-dishes-container">
+                <div class="dish-container item-1 rounded-4">
+                    <img src="/Assignment/Food/nasi-lemak.jpg" class="rounded-circle">
+                    <h4>Nasi Lemak</h4>
+                </div>
+                <div class="dish-container item-2 rounded-4">
+                    <img src="/Assignment/Food/Roti-Canai-6501-2.jpg" class="rounded-circle">
+                    <h4>Roti Canai</h4>
+                </div>
+                <div class="dish-container item-3 rounded-4">
+                    <img src="/Assignment/Food/chicken-satay-thumb.jpg" class="rounded-circle">
+                    <h4>Chicken Satay</h4>
+                </div>
+                <div class="dish-container item-4 rounded-4">
+                    <img src="/Assignment/Food/char-koay-teow-recipe.jpg" class="rounded-circle">
+                    <h4>Char Kuey Teow</h4>
+                </div>
+                <div class="dish-container item-5 rounded-4">
+                    <img src="/Assignment/Food/Penang-asam-laksa-in-a-bowl.jpg" class="rounded-circle">
+                    <h4>Asam Laksa</h4>
+                </div>
+                <div class="dish-container item-6 rounded-4">
+                    <img src="/Assignment/Food/cendol.jpg" class="rounded-circle">
+                    <h4>Cendol</h4>
+                </div>
+            </div>
+        </section>
+        <section id="upcoming-events">
+            <h2>Upcoming Events & Festivals</h2>
+            <div class="upcoming-events-container rounded-5">
+                <div class="event-container item-1 rounded-5">
+                    <img src="/Assignment/Shak Yong Sim/Food Festivals/Penang-International-Food-Festival-PIFF.jpg"
+                        class="rounded-3">
+                    <div class="event-content">
+                        <h4>Penang International Food Festival</h4>
+                        <p class="subtitle">31 August, 2025 <span class="days-left" data-date="2025-08-31"></span></p>
+                        <p>This is a major event for foodies, showcasing Penang's famous street food scene and its rich
+                            culinary heritage. It features...... <a
+                                href="/Assignment/HTML/Events&Festivals.html#penang-international-food-festival">Read
+                                more</a></p>
+                    </div>
+                </div>
+                <div class="event-container item-2 rounded-5">
+                    <img src="/Assignment/Shak Yong Sim/Food Festivals/Taste of Malaysia.jpeg" class="rounded-3">
+                    <div class="event-content">
+                        <h4>Taste of Malaysia</h4>
+                        <p class="subtitle">31 August, 2025 <span class="days-left" data-date="2025-08-31"></span></p>
+                        <p>This festival brings together a wide array of local street food and traditional dishes from
+                            various Malaysian states, offering...... <a
+                                href="/Assignment/HTML/Events&Festivals.html#taste-of-malaysia">Read more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="event-container item-3 rounded-5">
+                    <img src="/Assignment/Shak Yong Sim/Food Festivals/Malaysia-Gourmet-Food-Festival.jpg"
+                        class="rounded-3">
+                    <div class="event-content">
+                        <h4>Malaysia Gourmet Food Festival</h4>
+                        <p class="subtitle">15 October, 2025
+                            <span class="days-left" data-date="2025-10-15"></span>
+                        </p>
+                        <p>A more upscale food event, MIGF brings together top chefs and restaurants to showcase their
+                            culinary creations. It's a great opportunity to...... <a
+                                href="/Assignment/HTML/Events&Festivals.html#malaysia-international-gourmet-festival">Read
+                                more</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div id="newsletter-container" class="newsletter-container">
+        <h3>Subscribe to our Newsletter</h3>
+        <p>Get the latest updates straight to your inbox!</p>
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+        <button id="subscribe-btn">Subscribe</button>
+    </div>
+
+    <div id="cookie-consent" class="cookie-consent">
+  <p>We use cookies to improve your experience. You can accept all cookies or manage your preferences below.</p>
+  <div class="buttons">
+    <button id="accept-cookies">Accept All</button>
+    <button id="manage-cookies">Manage</button>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <div id="footer-placeholder">
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- External JS -->
+    <script src="/Assignment/JS/Home.js"></script>
+    <script src="/Assignment/JS/footer.js"></script>
+</body>
+
+
+</html>

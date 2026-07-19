@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover by Location</title>
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/Assignment/CSS/discover-locations.css">
+  <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css">
+</head>
+
+<body class="pt-5">
+  <!-- Header -->
+  <header class="header shadow-sm fixed-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+        <!-- Toggle button beside logo -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation & Search -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/Home.html">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/discover-food.html">
+                <i class="fas fa-utensils"></i> Discover by Cuisine
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/discover-location.html"
+                style="background-color:#060606; padding: 8px 10px; color:white;">
+                <i class="fas fa-map-marker-alt"></i> Discover by Location
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/FoodStreetGuide.html">
+                <i class="fas fa-street-view"></i> Food Streets Details
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/PopularDishes.html">
+                <i class="fas fa-fire"></i> Popular Dishes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                <i class="fas fa-calendar-alt"></i> Events & Festivals
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/VisitorTips.html">
+                <i class="fas fa-lightbulb"></i> Visitor Tips
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html">
+                <i class="fas fa-bookmark"></i> Bookmarked Page
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero-container">
+    <h1>Explore the best street food by location.</h1>
+    <p>Uncover hidden gems, taste local favorites, and find the must-try dishes in every corner of the city.</p>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="container mt-4">
+    <div class="row g-3">
+      <!-- Left Column -->
+      <div class="col-lg-6 col-12 d-flex flex-column">
+
+        <!-- Search + Buttons -->
+        <div class="input-group mb-3">
+          <div class="location-search-container">
+            <input type="text" id="locationInput" class="form-control" placeholder="Search for a location in Malaysia"
+              autocomplete="off">
+            <!-- Location search history dropdown -->
+            <div id="location-history-box" class="search-history-box"></div>
+          </div>
+          <button class="btn btn-info" id="currentLocationBtn">📌</button>
+          <button class="btn btn-warning" id="toggleFilter">☰</button>
+          <button class="btn btn-primary" id="searchBtn">🔍︎</button>
+        </div>
+
+        <!-- Filter Panel -->
+        <div id="filterPanel" class="mb-3 p-2 border rounded bg-light" style="display:none;">
+          <h6>Filter Options</h6>
+          <input type="text" id="keywordInput" class="form-control mb-2"
+            placeholder="Keyword (e.g., hawker, local food)">
+          <select id="radiusSelect" class="form-select mb-2">
+            <option value="500">&lt; 500 m</option>
+            <option value="1000">&lt; 1 km</option>
+            <option value="2000">&lt; 2 km</option>
+            <option value="5000">&lt; 5 km</option>
+            <option value="20000">5–20 km</option>
+            <option value="40000">20–40 km</option>
+            <option value="50000">40–50 km</option>
+          </select>
+        </div>
+
+        <!-- Popular Cities -->
+        <h4 class="mb-2">Popular Cities</h4>
+        <div class="row g-3" id="popularCities">
+          <div class="col-6">
+            <div class="city-card" data-city="Ipoh" data-lat="4.5975" data-lng="101.0901">
+              <img src="/Assignment/Jimmy Wong Jia Cheng/place/ipoh.jpg" alt="Ipoh">
+              <div class="content">Ipoh</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="city-card" data-city="Georgetown" data-lat="5.4141" data-lng="100.3288">
+              <img src="/Assignment/Jimmy Wong Jia Cheng/place/penang.jpg" alt="Penang">
+              <div class="content">Georgetown</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="city-card" data-city="Johor Bahru" data-lat="1.4927" data-lng="103.7414">
+              <img src="/Assignment/Jimmy Wong Jia Cheng/place/Johor-Bahru.webp" alt="Johor Bahru">
+              <div class="content">Johor Bahru</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="city-card" data-city="Kuala Lumpur" data-lat="3.1390" data-lng="101.6869">
+              <img src="/Assignment/Jimmy Wong Jia Cheng/place/kl.jpg" alt="Kuala Lumpur">
+              <div class="content">Kuala Lumpur</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="city-card" data-city="Melaka" data-lat="2.1896" data-lng="102.2501">
+              <img src="/Assignment/Jimmy Wong Jia Cheng/place/melaka.jpg" alt="Melaka">
+              <div class="content">Melaka</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="city-card" data-city="Seremban" data-lat="2.7278" data-lng="101.9383">
+              <img src="/Assignment/Jimmy Wong Jia Cheng/place/seremban.jpeg" alt="Seremban">
+              <div class="content">Seremban</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Map -->
+      <div class="col-lg-6 col-12">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Food Results Full Width -->
+  <div class="mt-4">
+    <!-- Current Location Display -->
+    <h4>Nearby Places</h4>
+    <div id="currentLocationHeader"></div>
+    <div class="food-grid" id="foodGrid"></div>
+  </div>
+
+
+  <!-- Footer -->
+  <div id="footer-placeholder">
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Maps API -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTG8PkTTetRX5tbmC13IWjXQRNYBEjFJQ&libraries=places&callback=initMap"></script>
+
+  <!-- External JS -->
+  <script src="/Assignment/JS/discover-locations.js"></script>
+  <script src="/Assignment/JS/footer.js"></script>
+</body>
+
+</html>

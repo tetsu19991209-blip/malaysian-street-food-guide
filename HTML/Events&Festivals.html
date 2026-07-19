@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Food Website Events & Festivals</title>
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Assignment/CSS/Events&Festivals.css">
+    <link rel="stylesheet" href="/Assignment/CSS/HeaderFooter.css">
+</head>
+
+<body class="pt-5">
+    <!-- Header -->
+    <header class="header shadow-sm fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold site-logo me-3" href="/Assignment/HTML/Home.html">Qualifood</a>
+
+                <!-- Toggle button beside logo -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation & Search -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Home.html">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-food.html">
+                                <i class="fas fa-utensils"></i> Discover by Cuisine
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/discover-location.html">
+                                <i class="fas fa-map-marker-alt"></i> Discover by Location
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/FoodStreetDetails.html">
+                                <i class="fas fa-street-view"></i> Food Streets Details
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/PopularDishes.html">
+                                <i class="fas fa-fire"></i> Popular Dishes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/Events&Festivals.html">
+                                <i class="fas fa-calendar-alt"></i> Events & Festivals
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/VisitorTips.html">
+                                <i class="fas fa-lightbulb"></i> Visitor Tips
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assignment/HTML/BookmarkedPage.html">
+                                <i class="fas fa-bookmark"></i> Bookmarked Page
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header>
+        <div class="hero-container">
+            <h1>Events and Festivals</h1>
+            <p>Your guide to the best events and festivals that celebrate the foods that bring people together.</p>
+        </div>
+    </header>
+    <main>
+        <h2>Upcoming Events</h2>
+        <div id="upcoming-events-container" class="upcoming-events-container rounded-5">
+            <div id="ramadan-food-bazaar" class="upcoming-event item-1 rounded-5" data-date="2026-05-14">
+                <h1>01</h1>
+                <div class="event-header">
+                    <h3>Ramadan Food Bazaar</h3>                 
+                    <p class="date">March 14 to March 24, 2026 <span class="days-left" data-date="2026-03-14"></span>
+                    </p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                            data-type="event" 
+                            data-name="Ramadan Food Bazaar" 
+                            data-description="These iconic bazaars are a quintessential Malaysian food experience, appearing during the holy month of Ramadan. They are a treasure trove of traditional Malay street food and delicacies for breaking the fast."
+                            data-image="/Assignment/Shak Yong Sim/Food Festivals/ramadan bazaar.jpg">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/ramadan bazaar.jpg" class="rounded-5">
+                <p>These iconic bazaars are a quintessential Malaysian food experience, appearing during the holy month
+                    of Ramadan. They are a treasure trove of traditional Malay street food and delicacies for breaking
+                    the fast.</p>
+            </div>
+            <div id="sabah-international-food-expo" class="upcoming-event item-2 rounded-5" data-date="2026-04-25">
+                <h1>02</h1>
+                <div class="event-header">
+                    <h3>Sabah International Food Expo</h3>
+                    <p class="date">April 25 to April 27, 2026<span class="days-left" data-date="2026-04-25"></span></p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                            data-type="event" 
+                            data-name="Sabah International Food Expo" 
+                            data-description="This expo showcases a wide range of food and beverage products, bringing together local Sabah delights and other regional specialties. It's a great event for both food businesses and the public to explore the latest food trends."
+                            data-image="/Assignment/Shak Yong Sim/Food Festivals/Sabah international food expo.jpg">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/Sabah international food expo.jpg" class="rounded-5">
+                <p>This expo showcases a wide range of food and beverage products, bringing together local Sabah
+                    delights and other regional specialties. It's a great event for both food businesses and the public
+                    to explore the latest food trends.</p>
+            </div>
+            <div id="selangor-food-mega-festival" class="upcoming-event item-3 rounded-5" data-date="2026-05-01">
+                <h1>03</h1>
+                <div class="event-header">
+                    <h3 class="mb-0">Selangor Food Mega Festival</h3>
+                    <p class="date">May 1 to May 4, 2026<span class="days-left" data-date="2026-05-1"></span></p>         
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                            data-type="event" 
+                            data-name="Selangor Food Mega Festival" 
+                            data-description="A festival dedicated to two of Malaysia's most iconic culinary delights: satay and durian. The event celebrates the rich flavors of Selangor with a variety of satay recipes and an array of durian varieties."
+                            data-image="/Assignment/Shak Yong Sim/Food Festivals/vsy25_logo-1.png">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/vsy25_logo-1.png" class="rounded-5">
+                <p>A festival dedicated to two of Malaysia's most iconic culinary delights: satay and durian. The event
+                    celebrates the rich flavors of Selangor with a variety of satay recipes and an array of durian
+                    varieties.</p>
+                    
+            </div>
+            <div id="malaysia-international-cocoa-fair" class="upcoming-event item-4 rounded-5" data-date="2026-05-24">
+                <h1>04</h1>
+                <div class="event-header">
+                    <h3>Malaysian International Cocoa Fair</h3>
+                    <p class="date">May 24 to May 27, 2026<span class="days-left" data-date="2026-05-24"></span></p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                        data-type="event" 
+                        data-name="Malaysian International Cocoa Fair" 
+                        data-description="This specialized event focuses on all things cocoa, from chocolate-making competitions and workshops to business matching sessions and product exhibitions."
+                        data-image="/Assignment/Shak Yong Sim/Food Festivals/crop_logo_micf__1_-removebg-rwAIQdD8-transformed-e1727335983709.png">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/crop_logo_micf__1_-removebg-rwAIQdD8-transformed-e1727335983709.png" class="rounded-5">
+                <p>This specialized event focuses on all things cocoa, from chocolate-making competitions and workshops
+                    to business matching sessions and product exhibitions</p>
+            </div>
+            <div id="havoc-food-festival" class="upcoming-event item-5 rounded-5" data-date="2026-06-25">
+                <h1>05</h1>
+                <div class="event-header">
+                    <h3>Havoc Food Festival</h3>
+                    <p class="date">June 25 to June 29, 2026 <span class="days-left" data-date="2026-06-25"></span></p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                            data-type="event" 
+                            data-name="Havoc Food Festival" 
+                            data-description="Known for its vibrant atmosphere, this festival brings together a massive selection of popular and trending street food vendors, from viral stalls to classic local favorites."
+                            data-image="/Assignment/Shak Yong Sim/Food Festivals/Havoc-Food-Festival-Logo.png">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/Havoc-Food-Festival-Logo.png" class="rounded-5">
+                <p>Known for its vibrant atmosphere, this festival brings together a massive selection of popular and
+                    trending street food vendors, from viral stalls to classic local favorites</p>
+            </div>
+            <div id="food-and-hospitality-malaysia" class="upcoming-event item-6 rounded-5" data-date="2025-09-23">
+                <h1>06</h1>
+                <div class="event-header">
+                    <h3>Food & Hospitality Malaysia</h3>
+                    <p class="date">September 23 to September 26, 2025<span class="days-left" data-start="2025-09-23"
+                            data-end="2025-09-26"></span></p>
+                            <div>
+                                <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                                data-type="event" 
+                                data-name="Food & Hospitality Malaysia" 
+                                data-description="This is a major trade-only event for the food and hospitality industry, but it also features exciting public-facing events like 'Culinaire Malaysia,' a prestigious culinary competition for top chefs."
+                                data-image="/Assignment/Shak Yong Sim/Food Festivals/FHM-Logo-02.png">
+                                <i class="bi bi-bookmark"></i>
+                            </button>
+                            <hr>
+                            </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/FHM-Logo-02.png" class="rounded-5">
+                <p>This is a major trade-only event for the food and hospitality industry, but it also features exciting
+                    public-facing events like "Culinaire Malaysia," a prestigious culinary competition for top chefs</p>
+            </div>
+            <div id="malaysia-international-gourmet-festival" class="upcoming-event item-7 rounded-5" data-date="2025-10-15">
+                <h1>07</h1>
+                <div class="event-header">
+                    <h3>Malaysia International Gourmet Festival</h3>
+                    <p class="subtitle">
+                        15 October, 2025
+                        <span class="days-left" data-date="2025-10-15"></span>
+                    </p>
+
+                    <p class="subtitle">
+                        22 October, 2025
+                        <span class="days-left" data-date="2025-10-22"></span>
+                    </p>
+
+                    <p class="subtitle">
+                        29 October, 2025
+                        <span class="days-left" data-date="2025-10-29"></span>
+                    </p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                        data-type="event" 
+                        data-name="Malaysia International Gourmet Festival" 
+                        data-description="A more high-end food event that showcases culinary brilliance through gourmet dining experiences, cooking demonstrations, and special-themed dinners by renowned chefs."
+                        data-image="/Assignment/Shak Yong Sim/Food Festivals/Malaysia-Gourmet-Food-Festival.jpg">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/Malaysia-Gourmet-Food-Festival.jpg" class="rounded-5">
+                <p>A more high-end food event that showcases culinary brilliance through gourmet dining experiences,
+                    cooking demonstrations, and special-themed dinners by renowned chefs</p>
+            </div>
+            <div id="taste-of-malaysia" class="upcoming-event item-8 rounded-5" data-date="2025-08-31">
+                <h1>08</h1>
+                <div class="event-header">
+                    <h3>Taste of Malaysia</h3>
+                    <p class="date">31 August, 2025<span class="days-left" data-date="2025-08-31"></span></p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                        data-type="event" 
+                        data-name="Taste of Malaysia" 
+                        data-description="This festival brings together a wide array of local street food and traditional dishes from various Malaysian states, offering a chance to taste the country's rich culinary diversity in one place."
+                        data-image="/Assignment/Shak Yong Sim/Food Festivals/Taste of Malaysia.jpeg">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/Taste of Malaysia.jpeg" class="rounded-5">
+                <p>This festival brings together a wide array of local street food and traditional dishes from various
+                    Malaysian states, offering a chance to taste the country's rich culinary diversity in one place.</p>
+            </div>
+            <div id="penang-international-food-festival" class="upcoming-event item-9 rounded-5" data-date="2025-08-31">
+                <h1>09</h1>
+                <div class="event-header">
+                    <h3>Penang International Food Festival</h3>
+                    <p class="date">31 August, 2025<span class="days-left" data-date="2025-08-31"></span></p>
+                    <div>
+                        <button class="btn btn-sm btn-outline-dark bookmark-btn" 
+                        data-type="event" 
+                        data-name="Penang International Food Festival" 
+                        data-description="This is a major event for foodies, showcasing Penang's famous street food scene and its rich culinary heritage. It features food carnivals, street food parties, cooking demonstrations, and special dining experiences."
+                        data-image="/Assignment/Shak Yong Sim/Food Festivals/Penang-International-Food-Festival-PIFF.jpg">
+                        <i class="bi bi-bookmark"></i>
+                    </button>
+                    <hr>
+                    </div>
+                </div>
+                <img src="/Assignment/Shak Yong Sim/Food Festivals/Penang-International-Food-Festival-PIFF.jpg" class="rounded-5">
+                <p>This is a major event for foodies, showcasing Penang's famous street food scene and its rich culinary
+                    heritage. It features food carnivals, street food parties, cooking demonstrations, and special
+                    dining experiences.</p>
+            </div>
+        </div>
+
+    </main>
+
+      <!-- Footer -->
+  <div id="footer-placeholder">
+  </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- External JS -->
+    <script src="/Assignment/JS/Events&Festivals.js"></script>
+    <script src="/Assignment/JS/footer.js"></script>
+</body>
+
+
+</html>
