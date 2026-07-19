@@ -2,7 +2,7 @@ let placesService;
 let selectedFood = "";
 
 // Load footer dynamically
-fetch("/Assignment/HTML/footer.html")
+fetch("../HTML/footer.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("footer-placeholder").innerHTML = data;
@@ -109,12 +109,12 @@ function searchNearbyPlaces(location, keyword) {
         const photoUrl =
           place.photos && place.photos.length > 0
             ? place.photos[0].getUrl({ maxWidth: 300 })
-            : "/Assignment/Images/nophoto.jpg";
+            : "../Images/nophoto.jpg";
 
         const placeCard = `
           <div class="food-card">
             <img src="${photoUrl}" alt="${place.name}" class="food-img"
-                 onerror="this.src='/Assignment/Images/nophoto.jpg'">
+                 onerror="this.src='../Images/nophoto.jpg'">
             <div class="food-content">
               <h5>${place.name}</h5>
               <p class="text-muted">${place.vicinity || "No address available"}</p>

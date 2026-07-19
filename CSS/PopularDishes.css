@@ -12,7 +12,7 @@ body {
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url('/Assignment/Chong Zhi Cong/images2/1.head.jpg');
+    url('../Chong Zhi Cong/images2/1.head.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@ font-family: 'Gothic A1', sans-serif;
 font-weight: 500;
 }
 .hero {
-    background: url('/Assignment/Chong Zhi Cong/images2/1.head.jpg') center/cover no-repeat;
+    background: url('../Chong Zhi Cong/images2/1.head.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -180,7 +180,7 @@ font-weight: 500;
 .detail-section {
     margin-top: 30px;
     padding: 20px;
-    background: url('/Assignment/Chong Zhi Cong/images2/1.1background.jpg') center/cover no-repeat;
+    background: url('../Chong Zhi Cong/images2/1.1background.jpg') center/cover no-repeat;
     border-radius: 10px;
     color: rgb(0, 0, 0); 
     text-align: justify;
@@ -188,7 +188,7 @@ font-weight: 500;
 
 /*Section 2*/
 .section-bg {
-    background: url('/Assignment/Chong Zhi Cong/images2/4.0background.jpg') no-repeat center center;
+    background: url('../Chong Zhi Cong/images2/4.0background.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     padding: 50px 0;
@@ -261,7 +261,7 @@ font-weight: 500;
 /* Section3 */
 #section3 {
     padding: 50px 0;
-    background: url('/Assignment/Chong Zhi Cong/images2/7.0wallpapepr.jpg') no-repeat center center; 
+    background: url('../Chong Zhi Cong/images2/7.0wallpapepr.jpg') no-repeat center center; 
     background-size: cover; 
     position: relative;
     color: #000000; 

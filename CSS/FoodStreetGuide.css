@@ -20,7 +20,7 @@ body {
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url('/Assignment/Chong Zhi Cong/images/1.head.jpg');
+    url('../Chong Zhi Cong/images/1.head.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

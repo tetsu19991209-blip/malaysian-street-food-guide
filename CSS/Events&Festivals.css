@@ -30,7 +30,7 @@ nav > h1 > a{
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)),
-    url("/Assignment/Shak Yong Sim/Food Festivals/hero.jpg");
+    url("../Shak Yong Sim/Food Festivals/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

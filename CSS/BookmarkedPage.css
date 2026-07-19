@@ -2,7 +2,7 @@
 .hero-container {
     color: white;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                      url("/Assignment/Header Photo/Bookmark.jpg");
+                      url("../Header Photo/Bookmark.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

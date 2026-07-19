@@ -29,7 +29,7 @@ function showFoods(places) {
   places.forEach((place) => {
     const photoUrl = place.photos
       ? place.photos[0].getUrl({ maxWidth: 200 })
-      : "/Assignment/Images/nophoto.jpg";
+      : "../Images/nophoto.jpg";
     const ratingText = place.rating ? `Rating: ${place.rating} ⭐` : "";
     const card = $(`
       <div class="food-card">
@@ -92,7 +92,7 @@ function fetchPlaces(
         position: location,
         title: "Search Location",
         icon: {
-          url: "/Assignment/Images/youarehere.png", // use your custom icon
+          url: "../Images/youarehere.png", // use your custom icon
           scaledSize: new google.maps.Size(40, 40),
           origin: new google.maps.Point(0, 0),
           anchor: new google.maps.Point(20, 40),
@@ -114,7 +114,7 @@ function fetchPlaces(
           position: place.geometry.location,
           title: place.name,
           icon: {
-            url: "/Assignment/Images/red-pin.png", // <-- your custom pin path
+            url: "../Images/red-pin.png", // <-- your custom pin path
             scaledSize: new google.maps.Size(40, 40), // Resize pin
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(20, 40), // Ensures the tip touches the location
@@ -326,7 +326,7 @@ function searchLocation() {
   });
 }
 
-fetch('/Assignment/HTML/footer.html')
+fetch('../HTML/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer-placeholder').innerHTML = data;

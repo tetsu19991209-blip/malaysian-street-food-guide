@@ -32,62 +32,62 @@ searchBar.addEventListener("input", () => {
 // descriiption of each street
 const streets = {
   "Jonker Street": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.1.jonker.jpg",
+    img: "../Chong Zhi Cong/images/3.3.1.jonker.jpg",
     state: "Melaka",
     tag: `Jonker Street, Jonker Walk or Jalan Hang Jebat, is the centrepiece to Melaka's Chinatown and is one of the state's most popular attractions. Previously most known for selling antiques, Jonker Street has grown into a unique cultural melting pot of historical landmarks, local handicrafts, delicious street food and vibrant night market. Visitors come to explore its charming pre-war street houses and experience the traditional flavours of Melaka's Baba Nyonya heritage, all the while shopping for local souvenirs, clothing, jewellery and other trinkets.`,
   },
   "Jalan Alor": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.2.jalanalor.jpg",
+    img: "../Chong Zhi Cong/images/3.3.2.jalanalor.jpg",
     state: "Kuala Lumpur",
     tag: `Jalan Alor is a vibrant, hawker-style food street in Kuala Lumpur's Bukit Bintang entertainment district, famous for its wide variety of affordable Malay and Thai-influenced seafood, grilled items, satay, char kway teow, and desserts like coconut ice cream. The street comes alive in the evenings when it's packed with illuminated stalls and attracts both locals and tourists seeking an authentic Malaysian street food experience.`,
   },
   "Gurney Drive": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.3gurney.jpg",
+    img: "../Chong Zhi Cong/images/3.3.3gurney.jpg",
     state: "Penang",
     tag: `Gurney Drive is one of Penang's most famous seafront esplanades, well-known for its bustling hawker centre. Visitors can savour Penang specialties such as char kway teow, Penang laksa, rojak and grilled seafood. The lively night food stalls create an authentic Malaysian dining atmosphere by the sea.`,
   },
   "Chulia Street": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.4chulia.jpg",
+    img: "../Chong Zhi Cong/images/3.3.4chulia.jpg",
     state: "Penang",
     tag: `Chulia Street in George Town is a historic road filled with backpacker hostels, cafés, and a vibrant food scene. At night, the street transforms into a food haven offering wonton mee, curry mee, and famous Penang street snacks. Its mix of culture and culinary delights makes it a must-visit for both locals and tourists.`,
   },
   "SS2 Night Market": {
-    img: "/Assignment/Chong Zhi Cong/images/2.5.ss2.jpg",
+    img: "../Chong Zhi Cong/images/2.5.ss2.jpg",
     state: "Selangor",
     tag: `The SS2 Night Market in Petaling Jaya is one of the largest pasar malam in Malaysia, held every Monday night. It offers an extensive range of local delicacies, fresh fruits, bubble tea, and Taiwanese-inspired street food. Beyond food, visitors can also browse clothing, accessories, and household goods at bargain prices.`,
   },
   "Jalan Yang Kalsom": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.6yangkalsom.jpg",
+    img: "../Chong Zhi Cong/images/3.3.6yangkalsom.jpg",
     state: "Perak (Ipoh)",
     tag: `Jalan Yang Kalsom in Ipoh is a local food hotspot known for its late-night hawker stalls. Popular offerings include satay, noodle soups, and Ipoh’s signature white coffee. The casual, open-air atmosphere makes it a great place to experience authentic local flavours.`,
   },
   "Jalan Wong Ah Fook": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.7.WongAhFook.jpg",
+    img: "../Chong Zhi Cong/images/3.3.7.WongAhFook.jpg",
     state: "Johor",
     tag: `Jalan Wong Ah Fook is Johor Bahru's main thoroughfare and a lively food destination. The area is famous for local hawker fare, seafood, and traditional kopitiams. Its close proximity to the JB Sentral makes it a convenient stop for both locals and Singaporean visitors.`,
   },
   "New Lane Street Food": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.8newlane.jpg",
+    img: "../Chong Zhi Cong/images/3.3.8newlane.jpg",
     state: "Penang",
     tag: `New Lane Street Food in George Town is one of Penang's top night food spots. It features famous dishes like char koay kak (fried radish cake), Penang curry mee, and oyster omelette. The street comes alive after sunset, offering a true taste of Penang street dining.`,
   },
   "Petaling Street": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.9petalingstreet.jpg",
+    img: "../Chong Zhi Cong/images/3.3.9petalingstreet.jpg",
     state: "Kuala Lumpur",
     tag: `Petaling Street is the heart of Kuala Lumpur's Chinatown, bustling with market stalls, food vendors, and bargain shopping. It is famous for local street food such as claypot chicken rice, char kway teow, and herbal drinks. The lively mix of culture, flavours, and night market energy makes it a tourist favourite.`,
   },
   "Gerbang Malam": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.10gerbang.jpg",
+    img: "../Chong Zhi Cong/images/3.3.10gerbang.jpg",
     state: "Perak (Ipoh)",
     tag: `Gerbang Malam is a bustling night bazaar located in the heart of Ipoh. It is best known for affordable street snacks, accessories, and fashion items. While not as food-centric as other streets, visitors can still enjoy local delicacies and the vibrant night market vibe.`,
   },
   "Kampar Food Street": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.11kamparfoodstreet.jpg",
+    img: "../Chong Zhi Cong/images/3.3.11kamparfoodstreet.jpg",
     state: "Perak",
     tag: `Kampar Food Street is famous for its traditional Cantonese and Hakka-style dishes. Visitors often come for Kampar curry chicken bread, claypot noodles, and local snacks. The area reflects the town's rich Chinese heritage and food culture.`,
   },
   "Arau Street Hawker Stall": {
-    img: "/Assignment/Chong Zhi Cong/images/3.3.12arau.jpg",
+    img: "../Chong Zhi Cong/images/3.3.12arau.jpg",
     state: "Perlis",
     tag: `Arau Street Hawker Stalls is a local favourite in Perlis, offering authentic northern Malaysian flavours. Popular items include laksa Perlis, grilled satay, and refreshing local desserts. The stalls provide a cosy, community-style food experience unique to the small state.`,
   },
@@ -206,7 +206,7 @@ function selectStreet(name) {
   }
 }
 
-fetch("/Assignment/HTML/footer.html")
+fetch("../HTML/footer.html")
   .then((res) => res.text())
   .then((data) => {
     document.getElementById("footer-placeholder").innerHTML = data;

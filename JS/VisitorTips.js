@@ -5,15 +5,15 @@ const stateData = {
     foods: [
       {name:"Laksa Johor", 
         description:"Spaghetti‑style laksa with fish gravy", 
-        image:"/Assignment/Food/Laksa Johor.jpeg"
+        image:"../Food/Laksa Johor.jpeg"
       },
       {name:"Mee Bandung", 
         description:"Rich prawn‑and‑egg noodle dish", 
-        image:"/Assignment/Food/Mee Bandung.jpg"
+        image:"../Food/Mee Bandung.jpg"
       },
       {name:"Otak‑otak", 
         description:"Grilled fish cake in banana leaf", 
-        image:"/Assignment/Food/Otak-otak.jpg"
+        image:"../Food/Otak-otak.jpg"
       }
     ]
   },
@@ -22,11 +22,11 @@ const stateData = {
     foods: [
       {name:"Laksa Kedah", 
         description:"Tamarind‑spiced laksa with fish and condiments", 
-        image:"/Assignment/Food/Laksa Kedah.jpg"
+        image:"../Food/Laksa Kedah.jpg"
       },
       {name:"Nasi Ulam",
         description:"A traditional Indonesian and Malaysian dish of steamed rice (nasi) served with various herbs and vegetables (Ulam (salad))",
-        image:"/Assignment/Food/Nasi Ulam.jpeg"  
+        image:"../Food/Nasi Ulam.jpeg"  
       }
     ]
   },
@@ -35,11 +35,11 @@ const stateData = {
     foods: [
       {name:"Nasi Kerabu", 
         description:"Blue‑colored rice salad with herbs & fish", 
-        image:"/Assignment/Food/Nasi Kerabu.png"
+        image:"../Food/Nasi Kerabu.png"
       },
       {name:"Ayam Percik", 
         description:"Grilled chicken with spicy, creamy sauce", 
-        image:"/Assignment/Food/Ayam Percik.jpeg"
+        image:"../Food/Ayam Percik.jpeg"
       }
     ]
   },
@@ -48,15 +48,15 @@ const stateData = {
     foods: [
       {name:"Chicken Rice Balls", 
         description:"Classic chicken rice shaped into balls", 
-        image:"/Assignment/Food/Chicken Rice Balls.png"
+        image:"../Food/Chicken Rice Balls.png"
       },
       {name:"Cendol", 
         description:"Shaved ice dessert with coconut & gula Melaka", 
-        image:"/Assignment/Food/Chendol Melaka.jpg"
+        image:"../Food/Chendol Melaka.jpg"
       },
       {name:"Nyonya Laksa", 
         description:"Coconut‑based, aromatic laksa", 
-        image:"/Assignment/Food/Laksa Nyonya.png"
+        image:"../Food/Laksa Nyonya.png"
       }
     ]
   },
@@ -65,11 +65,11 @@ const stateData = {
     foods: [
       {name:"Rendang Minang", 
         description:"Rich spiced coconut beef stew", 
-        image:"/Assignment/Food/Rendang Minang.jpeg"
+        image:"../Food/Rendang Minang.jpeg"
       },
       {name:"Lemang", 
         description:"Glutinous rice cooked in bamboo", 
-        image:"/Assignment/Food/Lemang.jpg"
+        image:"../Food/Lemang.jpg"
       }
     ]
   },
@@ -78,11 +78,11 @@ const stateData = {
     foods: [
       {name:"Nasi Dagang", 
         description:"Coconut rice with fish curry", 
-        image:"/Assignment/Food/Nasi Daging.jpg"
+        image:"../Food/Nasi Daging.jpg"
       },
       {name:"Mee Calong", 
         description:"A noodle dish eaten with fish soup, fish balls, and tofu puffs", 
-        image:"/Assignment/Food/Mee Calong.jpg"
+        image:"../Food/Mee Calong.jpg"
       }
     ]
   },
@@ -91,15 +91,15 @@ const stateData = {
     foods: [
       {name:"Char Kuey Teow", 
         description:"Smoky fried rice noodles with prawns", 
-        image:"/Assignment/Food/Char Kuey Teow.jpg"
+        image:"../Food/Char Kuey Teow.jpg"
       },
       {name:"Penang Laksa", 
         description:"Tangy, spicy fish‑based noodle soup", 
-        image:"/Assignment/Food/Laksa Penang.jpg"
+        image:"../Food/Laksa Penang.jpg"
       },
       {name:"Hokkien Mee", 
         description:"Prawn noodle soup with pork & egg", 
-        image:"/Assignment/Food/Hokkien Mee.jpg"
+        image:"../Food/Hokkien Mee.jpg"
       }
     ]
   },
@@ -108,11 +108,11 @@ const stateData = {
     foods: [
       {name:"Bean Sprout Chicken (Nga Choy Gai)", 
         description:"Silky chicken with crunchy sprouts", 
-        image:"/Assignment/Food/Bean Sprout Chicken.jpg"
+        image:"../Food/Bean Sprout Chicken.jpg"
       },
       {name:"Chee Cheong Fun", 
         description:"Thin, silky-smooth rice noodles made with the city's unique hard water, often served with savory toppings like minced meat and mushroom gravy or a rich, creamy curry sauce with pork rind and long beans, complemented by fried shallots, sesame seeds, and pickled green chilies", 
-        image:"/Assignment/Food/Chee Cheong Fun.jpg"
+        image:"../Food/Chee Cheong Fun.jpg"
       }
     ]
   },
@@ -121,7 +121,7 @@ const stateData = {
     foods: [
       {name:"Laksa Kuala Perlis", 
         description:"Noodle soup combining Thai & Malay spices", 
-        image:"/Assignment/Food/Laksa Perlis.jpg"}
+        image:"../Food/Laksa Perlis.jpg"}
     ]
   },
   "Sabah": {
@@ -129,11 +129,11 @@ const stateData = {
     foods: [
       {name:"Hinava", 
         description:"Tangy raw fish salad from Sabah", 
-        image:"/Assignment/Food/Hinava.jpg"
+        image:"../Food/Hinava.jpg"
       },
       {name:"Tuaran Mee", 
         description:"Intensely eggy, handmade noodles that are deep-fried until slightly crispy, then softened by being boiled in water or stock before being stir-fried with ingredients like char siew (barbecued pork), Hakka egg rolls, and vegetables such as choy sum", 
-        image:"/Assignment/Food/Tuaran Mee.jpg"
+        image:"../Food/Tuaran Mee.jpg"
       }
     ]
   },
@@ -142,15 +142,15 @@ const stateData = {
     foods: [
       {name:"Sarawak Laksa", 
         description:"Herbal prawn laksa from Borneo", 
-        image:"/Assignment/Food/Sarawak Laksa.jpg"
+        image:"../Food/Sarawak Laksa.jpg"
       },
       {name:"Kolo Mee", 
         description:"Dry noodles tossed with minced meat", 
-        image:"/Assignment/Food/Kolo Mee.jpg"
+        image:"../Food/Kolo Mee.jpg"
       },
       {name:"Manok Pansuh", 
         description:"Chicken cooked in bamboo", 
-        image:"/Assignment/Food/Manok Pansuh.jpg"
+        image:"../Food/Manok Pansuh.jpg"
       }
     ]
   },
@@ -159,7 +159,7 @@ const stateData = {
     foods: [
       {name:"Satay", 
         description:"Grilled skewers with peanut sauce", 
-        image:"/Assignment/Food/Satay.png"
+        image:"../Food/Satay.png"
       }
     ]
   },
@@ -168,11 +168,11 @@ const stateData = {
     foods: [
       {name:"Sata", 
         description:"Grilled fish dumpling in banana leaf", 
-        image:"/Assignment/Food/Sata.jpg"
+        image:"../Food/Sata.jpg"
       },
       {name:"Keropok Lekor", 
         description:"A popular, traditional Malaysian snack from Terengganu made from minced fish (often mackerel), sago flour, salt, and sugar, then rolled into long, sausage-like shapes", 
-        image:"/Assignment/Food/Keropok Lekor.png"
+        image:"../Food/Keropok Lekor.png"
       }
     ]
   },
@@ -181,15 +181,15 @@ const stateData = {
     foods: [
       {name:"Nasi Lemak", 
         description:"Fragrant coconut rice with sambal & anchovies", 
-        image:"/Assignment/Food/Nasi Lemak.jpg"
+        image:"../Food/Nasi Lemak.jpg"
       },
       {name:"Roti Canai", 
         description:"Flaky flatbread with dhal or curry", 
-        image:"/Assignment/Food/Roti Canai.png"
+        image:"../Food/Roti Canai.png"
       },
       {name:"Satay", 
         description:"Grilled skewers with peanut sauce", 
-        image:"/Assignment/Food/Satay.png"
+        image:"../Food/Satay.png"
       }
     ]
   }
@@ -453,7 +453,7 @@ $(document).ready(function() {
     });
 });
 
-fetch('/Assignment/HTML/footer.html')
+fetch('../HTML/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer-placeholder').innerHTML = data;

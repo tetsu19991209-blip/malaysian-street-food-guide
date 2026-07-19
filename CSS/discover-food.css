@@ -14,7 +14,7 @@ body {
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url("/Assignment/Jimmy Wong Jia Cheng/food/location-food header.jpg");
+    url("../Jimmy Wong Jia Cheng/food/location-food header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
